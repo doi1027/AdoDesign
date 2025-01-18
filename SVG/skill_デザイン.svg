@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #3c322e;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #f7f3e9;
+      }
+
+      .cls-3 {
+        fill: #3c322e;
+      }
+    </style>
+  </defs>
+  <g id="aboutページ">
+    <g>
+      <path class="cls-1" d="M9.45,79.61C9.45,40.64,41.04,9.04,80,9.04s70.55,31.59,70.55,70.57"/>
+      <polygon class="cls-1" points="108.52 80.53 91.55 113.17 68.45 113.17 51.48 80.53 80 29.42 108.52 80.53"/>
+      <path class="cls-1" d="M58.3,159.46v-13.23c0-33.06,9.24-33.06,9.24-33.06h24.93s9.24,0,9.24,33.06v13.77"/>
+      <line class="cls-1" x1="80" y1="29.42" x2="80" y2="71.29"/>
+      <path class="cls-1" d="M87.62,78.92c0,4.21-3.41,7.62-7.62,7.62s-7.62-3.41-7.62-7.62,3.41-7.62,7.62-7.62,7.62,3.41,7.62,7.62Z"/>
+      <g>
+        <rect class="cls-2" x="71.28" y="1" width="17.44" height="17.45"/>
+        <path class="cls-3" d="M87.72,2v15.45h-15.44V2h15.44M89.72,0h-19.44v19.45h19.44V0h0Z"/>
+      </g>
+      <g>
+        <rect class="cls-2" x="1" y="71.06" width="17.44" height="17.45"/>
+        <path class="cls-3" d="M17.44,72.06v15.45H2v-15.45h15.44M19.44,70.06H0v19.45h19.44v-19.45h0Z"/>
+      </g>
+      <g>
+        <rect class="cls-2" x="141.56" y="71.06" width="17.44" height="17.45"/>
+        <path class="cls-3" d="M158,72.06v15.45h-15.44v-15.45h15.44M160,70.06h-19.44v19.45h19.44v-19.45h0Z"/>
+      </g>
+      <line class="cls-1" x1="59.22" y1="137.6" x2="100.7" y2="137.6"/>
+      <line class="cls-1" x1="58.3" y1="147.41" x2="101.62" y2="147.41"/>
+    </g>
+  </g>
+</svg>

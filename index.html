@@ -6,47 +6,65 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'ofi0iak',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
 </head>
 <body>
 <!-- ヘッダー -->
     <header>
-            <div class="first_view">
-                <img class="first_view01" src="SVG/ファーストビュー_まる.svg">
-                <img class="first_view02" src="./SVG/ファーストビュー_ハート.svg">
-                <img  class="first_view03" src="./SVG/ファーストビュー＿つぶつぶ.svg">
+        <div class="first_view">
+            <img class="first_view01" src="SVG/ファーストビュー_まる.svg">
+            <img class="first_view02" src="./SVG/ファーストビュー_ハート.svg">
+            <img  class="first_view03" src="./SVG/ファーストビュー＿つぶつぶ.svg">
+        </div>
+        <div class="header_container">
+            <div class="header_box01">
+                <p>日々流れる時間を有意義に</p>
             </div>
-            <div class="box">
-            <p>日々流れる時間を有意義に</p>
-            <p>想いをカタチにして届けます</p>
+            <div class="header_box02">
+                <p>想いをカタチにして届けます</p>
             </div>
-            <div class="header_wrap">
-                <h1 class="header_logo">
-                    <img src="./SVG/ロゴ.svg">
-                </h1>
-                <div class="pc_menu_btn">
-                    <p>menu</p>
-                    <span></span>
-                </div>
+        </div>
+        <div class="header_wrap">
+            <h1 class="header_logo">
+                <img src="./SVG/ロゴ.svg">
+            </h1>
+            <div class="pc_menu_btn">
+                <p>menu</p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
-        <div>
-            
         </div>
     </header>
     <main>
 <!-- アバウト -->
-<section id="about">
+    <section id="about">
     <img src="./SVG/メイン_about_ライン上.svg" alt="">
     <div class="title">
         <h2>about</h2>
         <p>わたしのこと</p>
         <p>・・・</p>
     </div>
+    <div class="about_content">
     <div class="left">
     <p>日々流れる時間を有意義に過ごしたい。<br>
         想いをカタチにして喜びや感動を届けたい。デザインで笑顔に。<br>
         <br>
         趣味はドラマや映画を見ること。旅行に行くこと。テーマパークに行くこと。</p>
-    <a class="more_btn">もっとみる</a>
+    <div class="about_btn">
+    <a href="">もっとみる</a>
+    </div>
     </div>
     <div class="right">
         <img class="about_img_00" src="./SVG/about_似顔絵.svg" alt="似顔絵">
@@ -57,6 +75,7 @@
         <img class="about_img_05" src="./SVG/about_5.svg" alt="about_5">
         <img class="about_img_06" src="./SVG/about_6.svg" alt="about_6">
     </div>
+</div>
     <img src="./SVG/メイン_about_ライン下.svg" alt="">
 </section>
 <!-- スキル -->
@@ -98,8 +117,19 @@
         <p>つくったもの</p>
         <p>・・・</p>
     </div>
-    <p>ウェブデザイン</p>
-    <p>グラフィックデザイン</p>
+    <div class="works_content">
+    <p class="works_content01">ウェブデザイン</p>
+    <div class="works_container">
+        <div class="works_box">
+        </div>
+        <div class="works_box">
+        </div>
+        <div class="works_box">
+        </div>
+        <div class="works_box">
+    </div>
+    <p class="works_content02">グラフィックデザイン</p>
+    </div>
     <a class="more_btn">もっとみる</a>
     <img src="./SVG/メイン_works_ライン下.svg" alt="">
 </section>

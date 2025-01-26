@@ -1,120 +1,131 @@
 @charset "utf-8";
 /* ヘッダー */
 
-header {
-    height: 100vh;
-    position: relative;
+.first_header {
+  height: 100vh;
+  position: relative;
 }
-.first_view{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    z-index: 1;
+.second_header {
+  height: 5vh;
+  position: relative;
 }
-.first_view01{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 85%;
+.first_view {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  z-index: 1;
 }
-.first_view02{
-    position: absolute;
-    top: 45%;
-    right: 10%;
-    width: 35%;
+.first_view01 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 85%;
+  max-width: 850px;
 }
-.first_view03{
-    position: absolute;
-    top: 40%;
-    right: 81%;
-    width: 15%;
+.first_view02 {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  width: 25%;
+}
+.first_view03 {
+  position: absolute;
+  top: 40%;
+  right: 57%;
+  width: 12%;
 }
 .header_container {
-    position: absolute;
-    z-index: 100;
+  position: absolute;
+  z-index: 100;
 }
 .header_box01 {
-    background-color: #fcfaf5;
-    text-align: start;
-    width: 804px;
-    height: 77px;
-    border-radius: 0 20px 20px 0;
-    margin-bottom: 23px;
+  background-color: #fcfaf5;
+  text-align: start;
+  width: 804px;
+  height: 77px;
+  border-radius: 0 20px 20px 0;
+  margin-bottom: 23px;
 }
 .header_box02 {
-    background-color: #fcfaf5;
-    width: 864px;
-    height: 77px;
-    border-radius: 0 20px 20px 0;
+  background-color: #fcfaf5;
+  width: 864px;
+  height: 77px;
+  border-radius: 0 20px 20px 0;
 }
 .header_box01 p,
 .header_box02 p {
-    font-family: ta-oonishi, sans-serif;
-    font-size: 51px;
-    letter-spacing: 0.1em;
-    padding-left: 70px;
-    padding-top: 12px;
+  font-family: ta-oonishi, sans-serif;
+  font-size: 51px;
+  letter-spacing: 0.1em;
+  padding-left: 70px;
+  padding-top: 12px;
 }
 .header_wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 5% 0 5%;
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5% 0 5%;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
 }
 .header_logo {
-    width: 174px;
-    cursor: pointer;
+  width: 174px;
+  cursor: pointer;
 }
 .pc_menu_btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 .pc_menu_btn p {
-    padding-bottom: 9px;
+  padding-bottom: 9px;
 }
 .pc_menu_btn ul {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .pc_menu_btn ul li {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #705d53;
-  }
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #705d53;
+}
 /* アバウト */
 #about {
-    background: #f3ecd8;
-    margin: 0 auto;
-    width: 100%;
-
+  background: #f3ecd8;
+  margin: 0 auto;
+  width: 100%;
 }
 .title {
-    text-align: center;
-    margin: 150px 0 80px
+  text-align: center;
+  margin: 150px 0 80px;
 }
 .title h2 {
-    font-family: futura-pt, sans-serif;
-    font-size: 35px;
+  font-family: futura-pt, sans-serif;
+  font-size: 35px;
 }
-.title h2 {
-    font-size: 14px;
+.about_content {
+  display: flex;
+  margin-bottom: 130px;
 }
+/* アバウトボタン */
 .about_btn a {
-    display: block;
-    font-size: 16px;
-    width: 315px;
-    height: 60px;
-    transition: 0.3s ease-in-out;
-    background: #f7f3e9;
-    border-radius: 60px;
-    border: 1px solid #c7b299;
-    /* ボタンの影 */
-    box-shadow: 2px 4px #c7b299; 
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 315px;
+  height: 60px;
+  transition: 0.3s ease-in-out;
+  background: #f7f3e9;
+  border-radius: 60px;
+  border: 1px solid #c7b299;
+  /* ボタンの影 */
+  box-shadow: 2px 4px #c7b299;
+  margin-left: auto;
+  margin-top: 65px;
 }
 .about_btn a:hover {
   transform: translate3d(0.2rem, 0.2rem, 0);
@@ -123,130 +134,309 @@ header {
   transition: all 0.2s;
 }
 .about_btn a:after {
-    content: '';
-    height: calc(tan(60deg)*60px/2);
-    width: 60px;
-    clip-path: polygon(0 0,100% 50%,0 100%);
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    border-radius: 1px;
-    transition: 0.3s ease-in-out;
+  content: "";
+  height: calc(tan(60deg) * 30px / 2);
+  width: 25px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background-color: #705d53;
+  position: absolute;
+  right: 20px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
 }
-.about_content {
-    display: flex;
-}
-.left  {
-    font-size: 16px;
-    width: 57%;
+.left {
+  font-size: 16px;
+  width: 57%;
 }
 .left p {
-    line-height: 2.25;
-    letter-spacing: 0.05em;
-    text-align: start;
-    padding-left: 183px;
+  line-height: 2.25;
+  letter-spacing: 0.05em;
+  text-align: start;
+  padding-left: 183px;
+}
+.dotline {
+  border-bottom: 3px dotted #705d53;
 }
 .right {
-    position: relative;
-    width: 43%;
+  position: relative;
+  width: 43%;
 }
 .about_img_00 {
-    position: absolute;
-    width: 100%;
-    height: 243px;
+  position: absolute;
+  height: 243px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .about_img_01 {
-    position: absolute;
-    width: 100%;
-    height: 92px;
-    right: 105px;
+  position: absolute;
+  height: 92px;
+  top: -50px;
+  left: 80px;
 }
 .about_img_02 {
-    position: absolute;
-    width: 100%;
-    height: 74px;
-    right: 25px;
+  position: absolute;
+  height: 74px;
+  top: -120px;
+  left: 175px;
 }
 .about_img_03 {
-    position: absolute;
-    width: 100%;
-    height: 112px;
-    top: -105px;
+  position: absolute;
+  height: 112px;
+  top: -175px;
+  right: 120px;
 }
 .about_img_04 {
-    position: absolute;
-    width: 100%;
-    height: 43px;
-    top: -40px;
+  position: absolute;
+  height: 43px;
+  top: -45px;
+  left: 275px;
 }
 .about_img_05 {
-    position: absolute;
-    width: 100%;
-    height: 26px;
-    left: 116px;
+  position: absolute;
+  height: 26px;
+  top: -55px;
+  right: 105px;
 }
 .about_img_06 {
-    position: absolute;
-    width: 100%;
-    height: 74px;
-    left: 173px;
+  position: absolute;
+  height: 74px;
+  top: -10px;
+  right: 0;
 }
 /* スキル */
 .skill_content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .skill_content img {
-    width: 160px;
-    height: 160px;
-    align-items: center;
-}
-.skill_content ul li {
-    font-size: 21px;
+  width: 160px;
+  height: 160px;
+  align-items: center;
 }
 .left {
-    text-align: right;
-    width: 45%;
-}  
+  text-align: left;
+  width: 45%;
+}
 .right {
-    text-align: left;
-    width: 45%;
+  text-align: left;
+  width: 45%;
+}
+/* アバウト_スキル */
+.skill_container01 {
+  display: flex;
+  background-color: #fcfaf5;
+  width: 1000px;
+  height: 350px;
+  border-top-right-radius: 175px;
+  border-bottom-right-radius: 175px;
+}
+.design_left {
+  text-align: left;
+}
+.design_left img {
+  width: 140px;
+  height: 140px;
+}
+.design_right {
+  text-align: left;
+}
+.design_right img {
+  width: 223px;
+}
+.skill_container02 {
+  display: flex;
+  margin-left: auto;
+  background-color: #fcfaf5;
+  width: 1000px;
+  height: 350px;
+  border-top-left-radius: 175px;
+  border-bottom-left-radius: 175px;
+}
+.cording_left {
+  text-align: left;
+}
+.cording_left img {
+  width: 164px;
+  height: 105px;
+}
+.cording_right {
+  text-align: left;
+}
+.cording_right img {
+  width: 263px;
+}
+.skill_item {
+  font-size: 21px;
+  font-weight: normal;
+}
+.skill_level {
+  display: flex;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: normal;
+}
+/* もっとみるボタン */
+.more_btn a {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 315px;
+  height: 60px;
+  transition: 0.3s ease-in-out;
+  background: #f7f3e9;
+  border-radius: 60px;
+  border: 1px solid #c7b299;
+  /* ボタンの影 */
+  box-shadow: 2px 4px #c7b299;
+  margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 140px;
+}
+.more_btn a:hover {
+  transform: translate3d(0.2rem, 0.2rem, 0);
+  box-shadow: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.more_btn a:after {
+  content: "";
+  height: calc(tan(60deg) * 30px / 2);
+  width: 25px;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  background-color: #705d53;
+  position: absolute;
+  right: 20px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+/* インポータント */
+.important_content01 {
+  display: flex;
+}
+.important_content02 {
+  display: flex;
+}
+.important_content03 {
+  display: flex;
+}
+#important img {
+  width: 280px;
+}
+.important_list {
+  font-size: 200px;
+  font-weight: heavy;
+  color: #f3ecd8;
 }
 /* ワークス */
-.works_content01 {
-    font-size: 21px;
-    padding-right:  83px;
+.works_content {
+  font-size: 21px;
 }
-.works_container {
-    display: flex;
+.works_category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 122px;
 }
-.works_box {
-    background-color: #f3ecd8;     /* 背景色指定 */
-    padding: 0 12px 0 12px;
-    width: 100%;
-    height: 250px;
-    border-radius: 20px 20px 20px 20px;
+.works_container01 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 90%;
+  gap: 25px;
 }
-/* モックアップの設定入れる */
-.flex_test-item { 
-    padding: 10px;
-    color:  #fff;               /* 文字色 */
-    margin:  10px;              /* 外側の余白 */
-    border-radius:  5px;        /* 角丸指定 */
+.works_box01 {
+  background-color: #f3ecd8; /* 背景色指定 */
+  width: 350px;
+  border-radius: 20px;
+}
+.works_box01 img {
+  height: auto;
+  width: 100%;
+}
+.works_container02 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 60%;
+  gap: 25px;
+}
+.works_box02 {
+  background-color: #f3ecd8; /* 背景色指定 */
+  width: 350px;
+  border-radius: 20px;
+}
+.works_box02 img {
+  height: auto;
+  width: 100%;
+}
+.works_container03 {
+  max-width: 1050px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60%;
+  gap: 60px;
+}
+.works_box03 {
+  background-color: #f3ecd8; /* 背景色指定 */
+  width: 495px;
+  border-radius: 20px;
+}
+.works_box03 img {
+  height: auto;
+  width: 100%;
 }
 /* コンタクト */
 #contact {
-   text-align: center;
+  text-align: center;
+}
+.contact_text {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
 }
 .contact_btn {
-    background: #f7f3e9;
-    border: 1px solid #c7b299;
-    border-radius: 60px;
-    display: block;
-    font-size: 16px;
-    max-width: 300px;
-    padding: 15px 40px;
-    text-align: center;
-    align-items: center;
+  background: #f7f3e9;
+  border: 1px solid #c7b299;
+  border-radius: 60px;
+  display: block;
+  font-size: 16px;
+  max-width: 300px;
+  padding: 15px 40px;
+  text-align: center;
+  align-items: center;
 }
 /* フッター */
+footer {
+  position: relative;
+}
+.footer_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3% 3% 0 7%;
+}
+.pc_nav ul {
+  gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.footer_logo {
+  width: 174px;
+  cursor: pointer;
+}
+.footer_outer {
+  font-size: 16px;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+}

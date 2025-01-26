@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,24 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script>
-        (function(d) {
-          var config = {
-            kitId: 'ofi0iak',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        (function (d) {
+            var config = {
+                kitId: 'ofi0iak',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
-      </script>
+    </script>
 </head>
-<body>
-<!-- ヘッダー -->
-    <header>
+
+<body id="home">
+    <!-- ヘッダー -->
+    <header class="first_header">
         <div class="first_view">
             <img class="first_view01" src="SVG/ファーストビュー_まる.svg">
             <img class="first_view02" src="./SVG/ファーストビュー_ハート.svg">
-            <img  class="first_view03" src="./SVG/ファーストビュー＿つぶつぶ.svg">
+            <img class="first_view03" src="./SVG/ファーストビュー＿つぶつぶ.svg">
         </div>
         <div class="header_container">
             <div class="header_box01">
@@ -48,120 +50,250 @@
         </div>
     </header>
     <main>
-<!-- アバウト -->
-    <section id="about">
-    <img src="./SVG/メイン_about_ライン上.svg" alt="">
-    <div class="title">
-        <h2>about</h2>
-        <p>わたしのこと</p>
-        <p>・・・</p>
-    </div>
-    <div class="about_content">
-    <div class="left">
-    <p>日々流れる時間を有意義に過ごしたい。<br>
-        想いをカタチにして喜びや感動を届けたい。デザインで笑顔に。<br>
-        <br>
-        趣味はドラマや映画を見ること。旅行に行くこと。テーマパークに行くこと。</p>
-    <div class="about_btn">
-    <a href="">もっとみる</a>
-    </div>
-    </div>
-    <div class="right">
-        <img class="about_img_00" src="./SVG/about_似顔絵.svg" alt="似顔絵">
-        <img class="about_img_01" src="./SVG/about_1.svg" alt="about_1">
-        <img class="about_img_02" src="./SVG/about_2.svg" alt="about_2">
-        <img class="about_img_03" src="./SVG/about_3.svg" alt="about_3">
-        <img class="about_img_04" src="./SVG/about_4.svg" alt="about_4">
-        <img class="about_img_05" src="./SVG/about_5.svg" alt="about_5">
-        <img class="about_img_06" src="./SVG/about_6.svg" alt="about_6">
-    </div>
-</div>
-    <img src="./SVG/メイン_about_ライン下.svg" alt="">
-</section>
-<!-- スキル -->
-<section id="skill">
-    <div class="title">
-        <h2>skill</h2>
-        <p>できること</p>
-        <p>・・・</p>
-    </div>
-    <div class="skill_content">
-    <div class="left">
-        <img src="./SVG/skill_デザイン.svg" alt="デザイン">
-        <ul>
-            <li>illustrator	●◆■●◇</li>
-            <li>photoshop	●◆■●◇</li>
-            <li>figma	●◆■○◇</li>
-        </ul>
-    </div>
-    <div class="right">
-        <img src="./SVG/skill_コーディング.svg" alt="コーディング">
-        <ul>
-            <li>html	●◆■○◇</li>
-            <li>css	●◆■○◇</li>
-            <li>VSCodo	●◆■○◇</li>
-            <li>GitHub	●◆■○◇</li>
-            <li>jQuery	●◆□○◇</li>
-            <li>JavaScrip	●◆□○◇</li>
-            <li>sass	●◆■○◇</li>
-        </ul>
-    </div>
-    </div>
-    <a class="more_btn">もっとみる</a>
-</section>
-<!-- ワークス -->
-<section id="works">
-    <img src="./SVG/メイン_works_ライン上.svg" alt="">
-    <div class="title">
-        <h2>works</h2>
-        <p>つくったもの</p>
-        <p>・・・</p>
-    </div>
-    <div class="works_content">
-    <p class="works_content01">ウェブデザイン</p>
-    <div class="works_container">
-        <div class="works_box">
-        </div>
-        <div class="works_box">
-        </div>
-        <div class="works_box">
-        </div>
-        <div class="works_box">
-    </div>
-    <p class="works_content02">グラフィックデザイン</p>
-    </div>
-    <a class="more_btn">もっとみる</a>
-    <img src="./SVG/メイン_works_ライン下.svg" alt="">
-</section>
-<!-- コンタクト -->
-<section id="contact">
-    <div class="title">
-        <h2>contact</h2>
-        <p>お問合せ</p>
-        <p>・・・</p>
-    </div>
-    <p>最後までご覧いただきましてありがとうございます。<br>
-        ご依頼やご相談等お気軽にお問い合わせください。</p>
-    <a class="contact_btn">お問い合わせはこちら</a>
-</section>
-</main>
-<!-- フッター -->
+        <!-- アバウト -->
+        <section id="about">
+            <img src="./SVG/メイン_about_ライン上.svg" alt="">
+            <div class="title">
+                <h2>about</h2>
+                <p>わたしのこと</p>
+                <p>・・・</p>
+            </div>
+            <div class="about_content">
+                <div class="left">
+                    <p>日々流れる時間を有意義に過ごしたい。<br>
+                        想いをカタチにして喜びや感動を届けたい。デザインで笑顔に。<br>
+                        <br>
+                        趣味はドラマや映画を見ること。旅行に行くこと。テーマパークに行くこと。
+                    </p>
+                    <div class="about_btn">
+                        <a href="">もっとみる</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img class="about_img_00" src="./SVG/about_似顔絵.svg" alt="似顔絵">
+                    <img class="about_img_01" src="./SVG/about_1.svg" alt="about_1">
+                    <img class="about_img_02" src="./SVG/about_2.svg" alt="about_2">
+                    <img class="about_img_03" src="./SVG/about_3.svg" alt="about_3">
+                    <img class="about_img_04" src="./SVG/about_4.svg" alt="about_4">
+                    <img class="about_img_05" src="./SVG/about_5.svg" alt="about_5">
+                    <img class="about_img_06" src="./SVG/about_6.svg" alt="about_6">
+                </div>
+            </div>
+            <img src="./SVG/メイン_about_ライン下.svg" alt="">
+        </section>
+        <!-- スキル -->
+        <section id="skill">
+            <div class="title">
+                <h2>skill</h2>
+                <p>できること</p>
+                <p>・・・</p>
+            </div>
+            <div class="skill_content">
+                <div class="left">
+                    <img src="./SVG/skill_デザイン.svg" alt="デザイン">
+                    <table>
+                        <tr>
+                            <td class="skill_item">Illustrator</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>■</span>
+                                <span>●</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="skill_item">Photoshop</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>■</span>
+                                <span>●</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="skill_item">Figma</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>■</span>
+                                <span>○</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right">
+                    <img src="./SVG/skill_コーディング.svg" alt="コーディング">
+                    <table>
+                        <tr>
+                            <td class="skill_item">HTML</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>■</span>
+                                <span>○</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="skill_item">CSS</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>■</span>
+                                <span>○</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="skill_item">VSCode</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>■</span>
+                                <span>○</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="skill_item">GitHub</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>■</span>
+                                <span>○</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="skill_item">jQuery</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>□</span>
+                                <span>○</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="skill_item">JavaScript</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>□</span>
+                                <span>○</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="skill_item">Sass</td>
+                            <td class="skill_level">
+                                <span>●</span>
+                                <span>◆</span>
+                                <span>■</span>
+                                <span>○</span>
+                                <span>◇</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="more_btn">
+                <a href="">もっとみる</a>
+            </div>
+        </section>
+        <!-- ワークス -->
+        <section id="works">
+            <img src="./SVG/メイン_works_ライン上.svg" alt="">
+            <div class="title">
+                <h2>works</h2>
+                <p>つくったもの</p>
+                <p>・・・</p>
+            </div>
+            <div>
+                <p class="works_content">ウェブデザイン</p>
+                <div class="works_container01">
+                    <div class="works_box01">
+                        <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                    </div>
+                    <div class="works_box01">
+                        <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                    </div>
+                    <div class="works_box01">
+                        <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                    </div>
+                    <div class="works_box01">
+                        <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                    </div>
+                    <div class="works_box01">
+                        <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                    </div>
+                    <div class="works_box01">
+                        <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                    </div>
+                </div>
+                <p class="works_content">グラフィックデザイン</p>
+                <div class="works_container02">
+                    <div class="works_box02">
+                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                    </div>
+                    <div class="works_box02">
+                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                    </div>
+                    <div class="works_box02">
+                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                    </div>
+                    <div class="works_box02">
+                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                    </div>
+                    <div class="works_box02">
+                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                    </div>
+                    <div class="works_box02">
+                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                    </div>
+                </div>
+                <div class="more_btn">
+                    <a href="">もっとみる</a>
+                </div>
+                <img src="./SVG/メイン_works_ライン下.svg" alt="">
+        </section>
+        <!-- コンタクト -->
+        <section id="contact">
+            <div class="title">
+                <h2>contact</h2>
+                <p>お問合せ</p>
+                <p>・・・</p>
+            </div>
+            <p class="contact_text">最後までご覧いただきましてありがとうございます。<br>
+                ご依頼やご相談等お気軽にお問い合わせください。</p>
+            <div class="more_btn">
+                <a href="">お問い合わせはこちら</a>
+            </div>
+        </section>
+    </main>
+    <!-- フッター -->
     <footer>
-        <div class="footer_wrap">
-            <nav class="nav">
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#works">works</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
-            <h1 class="footer_logo">
-                <img src="./SVG/ロゴ.svg">
-            </h1>
+        <div>
             <img src="./SVG/フッター.svg" alt="">
+            <div class="footer_wrap">
+                <nav class="pc_nav">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#works">works</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+                <h1 class="footer_logo">
+                    <img src="./SVG/ロゴ.svg">
+                </h1>
+            </div>
+            <p class="footer_outer">© 2025 Ado Desgin</p>
         </div>
-        <p class="footer_outer">© 2025 Ado Desgin</p>
     </footer>
 </body>
+
 </html>

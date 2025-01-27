@@ -276,7 +276,7 @@
   font-weight: normal;
 }
 /* もっとみるボタン */
-.more_btn a {
+.center_btn a {
   display: flex;
   position: relative;
   justify-content: center;
@@ -294,13 +294,13 @@
   margin-top: 70px;
   margin-bottom: 140px;
 }
-.more_btn a:hover {
+.center_btn a:hover {
   transform: translate3d(0.2rem, 0.2rem, 0);
   box-shadow: none;
   opacity: 1;
   transition: all 0.2s;
 }
-.more_btn a:after {
+.center_btn a:after {
   content: "";
   height: calc(tan(60deg) * 30px / 2);
   width: 25px;
@@ -398,17 +398,7 @@
   line-height: 1.5;
   letter-spacing: 0.05em;
 }
-.contact_btn {
-  background: #f7f3e9;
-  border: 1px solid #c7b299;
-  border-radius: 60px;
-  display: block;
-  font-size: 16px;
-  max-width: 300px;
-  padding: 15px 40px;
-  text-align: center;
-  align-items: center;
-}
+/* コンタクトフォーム */
 /* フッター */
 footer {
   position: relative;

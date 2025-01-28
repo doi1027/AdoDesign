@@ -7,6 +7,7 @@
     <title>portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -20,6 +21,7 @@
 </head>
 
 <body id="home">
+    <!-- <div class="loading">Loading</div> -->
     <!-- ヘッダー -->
     <header class="first_header">
         <div class="first_view">
@@ -39,27 +41,31 @@
             <h1 class="header_logo">
                 <img src="./SVG/ロゴ.svg">
             </h1>
-            <div class="pc_menu_btn">
+            <div class="menu_btn">
                 <p>menu</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <span></span>
             </div>
+            <nav class="menu_nav">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#works">works</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
         <!-- アバウト -->
         <section id="about">
-            <img src="./SVG/メイン_about_ライン上.svg" alt="">
+            <img class="about_line01" src="./SVG/メイン_about_ライン上.svg" alt="">
             <div class="title">
                 <h2>about</h2>
                 <p>わたしのこと</p>
                 <p>・・・</p>
             </div>
             <div class="about_content">
-                <div class="left">
+                <div class="about_left">
                     <p>日々流れる時間を有意義に過ごしたい。<br>
                         想いをカタチにして喜びや感動を届けたい。デザインで笑顔に。<br>
                         <br>
@@ -67,9 +73,10 @@
                     </p>
                     <div class="about_btn">
                         <a href="">もっとみる</a>
+                        <img src="./SVG/btn_item.svg" alt="">
                     </div>
                 </div>
-                <div class="right">
+                <div class="about_right">
                     <img class="about_img_00" src="./SVG/about_似顔絵.svg" alt="似顔絵">
                     <img class="about_img_01" src="./SVG/about_1.svg" alt="about_1">
                     <img class="about_img_02" src="./SVG/about_2.svg" alt="about_2">
@@ -79,7 +86,7 @@
                     <img class="about_img_06" src="./SVG/about_6.svg" alt="about_6">
                 </div>
             </div>
-            <img src="./SVG/メイン_about_ライン下.svg" alt="">
+            <img class="about_line02" src="./SVG/メイン_about_ライン下.svg" alt="">
         </section>
         <!-- スキル -->
         <section id="skill">
@@ -89,7 +96,7 @@
                 <p>・・・</p>
             </div>
             <div class="skill_content">
-                <div class="left">
+                <div class="skill_left">
                     <img src="./SVG/skill_デザイン.svg" alt="デザイン">
                     <table>
                         <tr>
@@ -124,7 +131,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="right">
+                <div class="skill_right">
                     <img src="./SVG/skill_コーディング.svg" alt="コーディング">
                     <table>
                         <tr>
@@ -224,7 +231,7 @@
                     <div class="works_box01">
                         <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
                     </div>
-                    <div class="works_box01">
+                    <!-- <div class="works_box01">
                         <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
                     </div>
                     <div class="works_box01">
@@ -232,7 +239,7 @@
                     </div>
                     <div class="works_box01">
                         <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
-                    </div>
+                    </div> -->
                 </div>
                 <p class="works_content">グラフィックデザイン</p>
                 <div class="works_container02">
@@ -245,7 +252,7 @@
                     <div class="works_box02">
                         <img src="./Works/1x/OPENHOUSE.jpg" alt="">
                     </div>
-                    <div class="works_box02">
+                    <!-- <div class="works_box02">
                         <img src="./Works/1x/OPENHOUSE.jpg" alt="">
                     </div>
                     <div class="works_box02">
@@ -253,7 +260,7 @@
                     </div>
                     <div class="works_box02">
                         <img src="./Works/1x/OPENHOUSE.jpg" alt="">
-                    </div>
+                    </div> -->
                 </div>
                 <div class="center_btn">
                     <a href="">もっとみる</a>
@@ -279,7 +286,7 @@
         <div>
             <img src="./SVG/フッター.svg" alt="">
             <div class="footer_wrap">
-                <nav class="pc_nav">
+                <nav class="footer_nav">
                     <ul>
                         <li><a href="#home">home</a></li>
                         <li><a href="#about">about</a></li>
@@ -294,6 +301,25 @@
             <p class="footer_outer">© 2025 Ado Desgin</p>
         </div>
     </footer>
+    <script>
+        // ローディング
+        // let loading = document.querySelector(".loading");
+        // let letters = loading.textContent.split("");
+        // loading.textContent = "";
+        // letters.forEach((letter, i) => {
+        //     let span = document.createElement("span");
+        //     span.textContent = letter;
+        //     span.style.animationDelay = `${i / 10}s`;
+        //     loading.append(span);
+        // });
+        // ハンバーガーメニュー
+        $(function () {
+            $('.menu_btn').on('click', function () {
+                $('.menu_btn').toggleClass('open');
+                $('.menu_nav').fadeToggle();
+            })
+        })
+    </script>
 </body>
 
 </html>

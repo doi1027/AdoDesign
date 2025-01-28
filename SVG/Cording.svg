@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226.59 73.98">
+<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.23 74.23">
   <defs>
     <style>
       .cls-1 {
         fill: none;
         stroke: #c7b299;
-        stroke-width: .5px;
       }
 
       .cls-1, .cls-2 {
@@ -22,8 +21,8 @@
   </defs>
   <g id="aboutページ">
     <g>
-      <text class="cls-2" transform="translate(3.25 56.43)"><tspan x="0" y="0">Design</tspan></text>
-      <text class="cls-1" transform="translate(.25 54.43)"><tspan x="0" y="0">Design</tspan></text>
+      <text class="cls-2" transform="translate(3.5 56.68)"><tspan x="0" y="0">Cording</tspan></text>
+      <text class="cls-1" transform="translate(.5 54.68)"><tspan x="0" y="0">Cording</tspan></text>
     </g>
   </g>
 </svg>

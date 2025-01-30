@@ -7,6 +7,7 @@
     <title>works</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body id="home">
@@ -28,42 +29,56 @@
     </header>
     <main>
         <section id="works">
-            <img src="./SVG/メイン_works_ライン上.svg" alt="">
             <div class="title">
                 <h2>works</h2>
                 <p>つくったもの</p>
                 <p>・・・</p>
             </div>
-            <div class="works_container03">
+            <div class="works_detail">
                 <div class="works_left">
                     <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
-
-                    <div class="pc_modal">
-                        <a href="">PC版</a>
-                    </div>
-                    <div class="sp_modal">
-                        <a href="">スマホ版</a>
+                    <div class="open_btn">
+                        <p>PC版</p>
+                        <img src="./SVG/mordal_before.svg" alt="">
                     </div>
                 </div>
+                <div class="modal_content">
+                    <span class="close_btn"></span>
+                    <div class="modal_img">
+                        <img src="./Works/1x/pc_modal_LIFE STYLE FIT.jpg" alt="PC版">
+                    </div>
+                </div>
+
                 <div class="works_right">
-                    <p class="dotline">LIFE STYLE FIT</p>
+                    <p class="dot_line">LIFE STYLE FIT</p>
+
                     <p>期間 2週間</p>
                     <p>担当 デザイン（架空LPデザイン）</p>
-                    <p class="dotline">ツール Illustrator</p>
-                    <p>概要
-                        10周年を機会にWEBサイトをリニューアル
+                    <p class="dot_line">ツール Illustrator</p>
+
+                    <p>概要<br>
+                        10周年を機会にWEBサイトをリニューアル<br>
                         認知向上・予約獲得・SNSフォロワーUPが目的</p>
-                    <p>ポイント
-                        お店の雰囲気・人が感じられるサイトの作成を意識しました
-                        背景にアイボリーを使用し、ナチュラルで清潔感を感じる雰囲気にしました
+                    <p>ポイント<br>
+                        お店の雰囲気・人が感じられるサイトの作成を意識しました<br>
+                        背景にアイボリーを使用し、ナチュラルで清潔感を感じる雰囲気にしました<br>
                         TOPに予約ボタンを配置し、誘導しました</p>
                     <div class="works_btn">
-                        <a href="">戻る</a>
+                        <a href="works.html">戻る</a>
+                        <img src="./SVG/btn_item.svg" alt="">
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script>
+        $(function () {
+            $('.open_btn').on('click', function () {
+                $('.open_btn').toggleClass('open');
+                $('.modal_content').fadeToggle();
+            })
+        })
+    </script>
 </body>
 
 </html>

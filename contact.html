@@ -28,15 +28,61 @@
     </header>
     <main>
         <!-- コンタクト -->
-        <section id="contact">
+        <section id="contact" class="contact">
             <div class="title">
                 <h2>contact</h2>
                 <p>お問合せ</p>
                 <p>・・・</p>
-                <div class="center_btn">
-                    <a href="">送信する</a>
-                </div>
+            </div>
+            <div class="contact_form">
+                <p>お気軽にお問い合わせください</p>
+                <p class="contact_announce">※は必須です</p>
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSdFbrOG3O-8RJ2X_0QCL_nRO-0GNLuvuwu1yFR9d53BAnLC0A/viewform?usp=header"
+                    method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
+                    <div class="form_item">
+                        <label for="name">
+                            <span class="contact_text">名前</span>
+                            <span class="contact_required">*</span>
+                        </label>
+                        <input type="text" id="name" name="entry.297802334" required="" placeholder="山田 花子">
+                    </div>
+                    <div class="form_item">
+                        <label for="name">
+                            <span class="contact_text">カナ</span>
+                            <span class="contact_required">*</span>
+                        </label>
+                        <input type="text" id="name" name="entry.1033472367" required="" placeholder="ヤマダ ハナコ">
+                    </div>
+                    <div class="form_item">
+                        <label for="email">
+                            <span class="contact_text">メール</span>
+                            <span class="contact_required">*</span>
+                        </label>
+                        <input type="email" id="email" name="entry.1182456493" required=""
+                            placeholder="abcd123@gmail.com">
+                    </div>
+                    <div class="form_item">
+                        <label for="message">
+                            <span class="contact_text">内容</span>
+                            <span class="contact_required">*</span>
+                        </label>
+                        <textarea name="entry.1164949119" id="message" cols="30" rows="10" required=""
+                            placeholder="ご質問・ご依頼はこちらにご記載ください。３日以内に返信いたします。"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="center_btn">
+                <a href="">送信する</a>
+            </div>
+
+            </div>
     </main>
+    <script type="text/javascript">
+        let submitted = false;
+    </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='THANKSページのURL';}"></iframe>
 </body>
 
 </html>

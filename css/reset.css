@@ -21,6 +21,7 @@ li {
   /*デフォルトの文字色、font-familyを予め当てておく*/
   color: #705d53;
   font-family: zen-maru-gothic, sans-serif;
+  font-size: 16px;
 }
 
 a {

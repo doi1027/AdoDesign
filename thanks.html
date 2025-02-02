@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thanks</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ofi0iak',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body id="home">
+    <header class="second_header">
+        <img src="./SVG/header.svg" alt="ヘッダー画像">
+        <div class="header_wrap">
+            <h1 class="header_logo">
+                <img src="./SVG/logo.svg">
+            </h1>
+            <div class="menu_btn">
+                <p>menu</p>
+                <div>
+                    <span></span>
+                </div>
+            </div>
+            <nav class="menu_nav">
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./works.html">works</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- コンタクト -->
+        <section id="contact">
+            <div class="title">
+                <h2>contact</h2>
+                <p>お問合せ</p>
+                <p>・・・</p>
+            </div>
+            <div class="thanks_contents">
+                <p class="thanks01">thank you</p>
+                <p class="thanks02">最後までご覧いただきましてありがとうございます。</p>
+                <img class="thanks_img01" src="./SVG/thanks_イラスト.svg" alt="">
+                <img class="thanks_img02" src="./SVG/first view_ハート.svg" alt="">
+            </div>
+            <div class="center_btn">
+                <a href="index.html">ホームに戻る</a>
+            </div>
+    </main>
+</body>
+
+</html>

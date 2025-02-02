@@ -7,23 +7,39 @@
     <title>contact</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ofi0iak',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body id="home">
     <header class="second_header">
-        <img src="./SVG/ヘッダー.svg" alt="">
+        <img src="./SVG/header.svg" alt="ヘッダー画像">
         <div class="header_wrap">
             <h1 class="header_logo">
-                <img src="./SVG/ロゴ.svg">
+                <img src="./SVG/logo.svg">
             </h1>
-            <div class="pc_menu_btn">
+            <div class="menu_btn">
                 <p>menu</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div>
+                    <span></span>
+                </div>
             </div>
+            <nav class="menu_nav">
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./works.html">works</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -38,7 +54,7 @@
                 <p>お気軽にお問い合わせください</p>
                 <p class="contact_announce">※は必須です</p>
                 <form
-                    action="https://docs.google.com/forms/d/e/1FAIpQLSdFbrOG3O-8RJ2X_0QCL_nRO-0GNLuvuwu1yFR9d53BAnLC0A/viewform?usp=header"
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdFbrOG3O-8RJ2X_0QCL_nRO-0GNLuvuwu1yFR9d53BAnLC0A/formResponse"
                     method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
                     <div class="form_item">
                         <label for="name">
@@ -52,7 +68,7 @@
                             <span class="contact_text">カナ</span>
                             <span class="contact_required">*</span>
                         </label>
-                        <input type="text" id="name" name="entry.1033472367" required="" placeholder="ヤマダ ハナコ">
+                        <input type="text" id="rubi" name="entry.1033472367" required="" placeholder="ヤマダ ハナコ">
                     </div>
                     <div class="form_item">
                         <label for="email">
@@ -69,12 +85,11 @@
                         </label>
                         <textarea name="entry.1164949119" id="message" cols="30" rows="10" required=""
                             placeholder="ご質問・ご依頼はこちらにご記載ください。３日以内に返信いたします。"></textarea>
-                    </div>
+                    </div><button type="submit" class="center_btn">送信する</button>
                 </form>
             </div>
-            <div class="center_btn">
-                <a href="">送信する</a>
-            </div>
+
+
 
             </div>
     </main>
@@ -82,7 +97,7 @@
         let submitted = false;
     </script>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-        onload="if(submitted){window.location='THANKSページのURL';}"></iframe>
+        onload="if(submitted){window.location='./thanks.html';}"></iframe>
 </body>
 
 </html>

@@ -7,23 +7,39 @@
     <title>about</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ofi0iak',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
 </head>
 
 <body id="home">
     <header class="second_header">
-        <img src="./SVG/ヘッダー.svg" alt="">
+        <img src="./SVG/header.svg" alt="ヘッダー画像">
         <div class="header_wrap">
             <h1 class="header_logo">
-                <img src="./SVG/ロゴ.svg">
+                <img src="./SVG/logo.svg">
             </h1>
-            <div class="pc_menu_btn">
+            <div class="menu_btn">
                 <p>menu</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div>
+                    <span></span>
+                </div>
             </div>
+            <nav class="menu_nav">
+                <ul>
+                    <li><a href="./index.html">home</a></li>
+                    <li><a href="./about.html">about</a></li>
+                    <li><a href="./works.html">works</a></li>
+                    <li><a href="./contact.html">contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -35,28 +51,35 @@
                 <p>・・・</p>
             </div>
             <div class="about_content">
-                <div class="about_left">
+                <div class="about_left02">
                     <p class="dot_line">仕事に子育てに奮闘中の2児の母です。</p>
-                    <p class="dot_line">短大卒業後、広告代理店に就職。
-                        営業事務として入稿から納品、校正などの印刷関係を担当しました。
-
-                        管理会社に転職。営業事務として募集業務を担当しました。
-                        募集資料を作成する中で、見る人にわかりやすく、興味を持ってもらうためにはどのようなデザインにしよう。と考える時間が好きになりました。</p>
-                    <p class="dot_line">独学でデザインの勉強を始め、illustratorやPhotoshop、色彩関係の資格を取得。
-                        デザインのことをもっと学びたい！と思った時にウェブデザイナーという仕事を知りました。
-
-                        子供との時間を増やしたいという思いがあり、挑戦するきっかけになりました。
-                        4ヶ月間でウェブデザインについて学び、2ヶ月間でグラフィックデザインについても学びました。</p>
+                    <p class="dot_line">短大卒業後、広告代理店に就職。<br>
+                        営業事務として入稿から納品、校正などの印刷関係を担当しました。<br>
+                        <br>
+                        管理会社に転職。営業事務として募集業務を担当しました。<br>
+                        募集資料を作成する中で、見る人にわかりやすく、興味を持ってもらうためにはどのようなデザインにしよう。と考える時間が好きになりました。
+                    </p>
+                    <p class="dot_line">独学でデザインの勉強を始め、illustratorやPhotoshop、色彩関係の資格を取得。<br>
+                        デザインのことをもっと学びたい！と思った時にウェブデザイナーという仕事を知りました。<br>
+                        <br>
+                        子供との時間を増やしたいという思いがあり、挑戦するきっかけになりました。<br>
+                        4ヶ月間でウェブデザインについて学び、2ヶ月間でグラフィックデザインについても学びました。
+                    </p>
                     <p>これらの経験と、向上心でお客様の課題解決のお手伝いができたらと考えています。</p>
                 </div>
-                <div class="about_right">
+                <div class="about_right02">
+                    <p>はじめまして<br>
+                        ADO DESIGNの<br>
+                        あきです。</p>
                     <img class="about_img_00" src="./SVG/about_似顔絵.svg" alt="似顔絵">
-                    <img class="about_img_01" src="./SVG/about_1.svg" alt="about_1">
-                    <img class="about_img_02" src="./SVG/about_2.svg" alt="about_2">
-                    <img class="about_img_03" src="./SVG/about_3.svg" alt="about_3">
-                    <img class="about_img_04" src="./SVG/about_4.svg" alt="about_4">
-                    <img class="about_img_05" src="./SVG/about_5.svg" alt="about_5">
-                    <img class="about_img_06" src="./SVG/about_6.svg" alt="about_6">
+                    <div class="about_wrap">
+                        <img class="about_img_01" src="./SVG/about_1.svg" alt="about_1">
+                        <img class="about_img_02" src="./SVG/about_2.svg" alt="about_2">
+                        <img class="about_img_03" src="./SVG/about_3.svg" alt="about_3">
+                        <img class="about_img_04" src="./SVG/about_4.svg" alt="about_4">
+                        <img class="about_img_05" src="./SVG/about_5.svg" alt="about_5">
+                        <img class="about_img_06" src="./SVG/about_6.svg" alt="about_6">
+                    </div>
                 </div>
             </div>
             <img class="about_line03" src="./SVG/line.svg" alt="">
@@ -102,41 +125,56 @@
                 <p>たいせつにしていること</p>
                 <p>・・・</p>
             </div>
+            <!-- 好奇心 -->
             <div class="important_content01">
-                <div class="important_left">
-                    <p>好</p>
-                    <p>奇心</p>
-                    <p>何事にもまず挑戦します。知識や情報収集を欠かさず追い求めます。
+                <div class="important_left01">
+                    <div class="important_conteiner">
+                        <img class="important_item" src="./SVG/important_item.svg" alt="">
+                        <p class="important_title01">好</p>
+                        <p class="important_title02">奇心</p>
+                    </div>
+                    <img class="important_line" src="./SVG/important_line.svg" alt="">
+                    <p class="important_text">何事にもまず挑戦します。知識や情報収集を欠かさず追い求めます。
                         デザインに対する興味が強く、スキルアップは特に集中して取り組むことができます。</p>
                 </div>
-                <div class="important_right">
+                <div class="important_right01">
                     <p class="important_list">01</p>
-                    <img src="./SVG/important_つぶつぶ.svg" alt="">
+                    <img class="important_decoration" src="./SVG/important_つぶつぶ.svg" alt="">
                 </div>
             </div>
+            <!-- 課題解決 -->
             <div class="important_content02">
-                <div class="important_left">
+                <div class="important_left02">
                     <p class="important_list">02</p>
-                    <img src="./SVG/important_つぶつぶ.svg" alt="">
+                    <img class="important_decoration" src="./SVG/important_つぶつぶ.svg" alt="">
                 </div>
-                <div class="important_right">
-                    <p>課</p>
-                    <p>題解決</p>
-                    <p>何事にも諦めず挑戦します。あらゆる角度から解決策を見出せるよう努めます。
+                <div class="important_right02">
+                    <div class="important_conteiner">
+                        <img class="important_item" src="./SVG/important_item.svg" alt="">
+                        <p class="important_title01">課</p>
+                        <p class="important_title02">題解決</p>
+                    </div>
+                    <img class="important_line" src="./SVG/important_line.svg" alt="">
+                    <p class="important_text">何事にも諦めず挑戦します。あらゆる角度から解決策を見出せるよう努めます。
                         ゴールを明確にし、お客様と共により意味のあるデザインを完成させていきます。</p>
                 </div>
             </div>
-            <div class="important_content03">
-                <div class="important_left">
-                    <p>期</p>
-                    <p>日管理</p>
-                    <p>デザインが良くても期日に間に合わなければ意味がありません。
+            <!-- 期日管理 -->
+            <div class="important_content01">
+                <div class="important_left01">
+                    <div class="important_conteiner">
+                        <img class="important_item" src="./SVG/important_item.svg" alt="">
+                        <p class="important_title01">期</p>
+                        <p class="important_title02">日管理</p>
+                    </div>
+                    <img class="important_line" src="./SVG/important_line.svg" alt="">
+                    <p class="important_text">デザインが良くても期日に間に合わなければ意味がありません。
                         期日に間に合ってもデザインが悪くては意味がありません。
                         お客様の時間はもちろん、自分の時間も大切にし、満足度を高められるよう努めます。</p>
                 </div>
-                <div class="important_right">
+                <div class="important_right01">
                     <p class="important_list">03</p>
-                    <img src="./SVG/important_つぶつぶ.svg" alt="">
+                    <img class="important_decoration" src="./SVG/important_つぶつぶ.svg" alt="">
                 </div>
             </div>
             <div class="center_btn">

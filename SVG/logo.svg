@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 71.96">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #705d53;
+        stroke-width: .71px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        font-family: FuturaPT-Demi, 'Futura PT';
+        font-size: 31.5px;
+        font-weight: 300;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #715e54;
+      }
+
+      .cls-5 {
+        fill: #fcf9f4;
+      }
+
+      .cls-6 {
+        fill: #c19e8d;
+      }
+
+      .cls-2 {
+        stroke: #bd9b8b;
+        stroke-width: 2.5px;
+      }
+
+      .cls-7 {
+        fill: #705d53;
+        font-family: 'TA_oonishi-83pv-RKSJ-H', TA_oonishi;
+        font-size: 10.39px;
+      }
+
+      .cls-8 {
+        letter-spacing: -.3em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.32em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.34em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.1em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-13 {
+        letter-spacing: -.16em;
+      }
+
+      .cls-14 {
+        letter-spacing: .1em;
+      }
+    </style>
+  </defs>
+  <g id="contactページ">
+    <g>
+      <g>
+        <text class="cls-3" transform="translate(123.87 51.22)"><tspan x="0" y="0">Ado Design</tspan></text>
+        <text class="cls-7" transform="translate(125.32 20.83)"><tspan class="cls-13" x="0" y="0">デ</tspan><tspan class="cls-9" x="8.73" y="0">ザ</tspan><tspan class="cls-10" x="15.8" y="0">イ</tspan><tspan class="cls-8" x="22.66" y="0">ン</tspan><tspan class="cls-11" x="29.93" y="0">で</tspan><tspan class="cls-12" x="39.28" y="0">笑</tspan><tspan class="cls-13" x="49.05" y="0">顔</tspan><tspan class="cls-14" x="57.78" y="0">に</tspan></text>
+      </g>
+      <g>
+        <circle class="cls-4" cx="75.27" cy="20.06" r="3.08"/>
+        <line class="cls-1" x1="75.27" y1="15.79" x2="75.27" y2="13.39"/>
+        <line class="cls-1" x1="77.02" y1="16.24" x2="77.71" y2="13.67"/>
+        <line class="cls-1" x1="73.3" y1="16.24" x2="72.61" y2="13.67"/>
+        <path class="cls-1" d="M71.3,18.63c.59-1.63,2.14-2.79,3.97-2.79s3.39,1.16,3.97,2.79"/>
+        <g>
+          <path class="cls-6" d="M42.62,38.36h-19.58l-4.29,10.19h-10.26L29.38,0h7.42l20.31,48.55h-10.19l-4.3-10.19ZM39.86,30.65l-6.91-17.47-6.91,17.47h13.83Z"/>
+          <path class="cls-6" d="M69.77,0c6.77,0,12.67.73,18.05,4.73,5.9,4.44,9.32,11.5,9.32,19.58s-3.35,15.07-9.75,19.58c-5.68,4-10.99,4.66-17.76,4.66h-12.52V0h12.67ZM66.57,40.4h2.91c2.4,0,7.64-.15,11.86-3.2,3.86-2.77,6.04-7.72,6.04-12.88s-2.11-10.05-5.97-12.96c-3.93-2.91-8.73-3.2-11.94-3.2h-2.91v32.25Z"/>
+        </g>
+        <path class="cls-2" d="M1.25,48.55c0,12.24,22.61,22.16,50.5,22.16"/>
+        <path class="cls-2" d="M51.75,70.71c27.89,0,50.5-9.92,50.5-22.16"/>
+        <circle class="cls-4" cx="32.94" cy="20.06" r="3.08"/>
+        <line class="cls-1" x1="32.94" y1="15.79" x2="32.94" y2="13.39"/>
+        <line class="cls-1" x1="34.69" y1="16.24" x2="35.38" y2="13.67"/>
+        <line class="cls-1" x1="30.97" y1="16.24" x2="30.28" y2="13.67"/>
+        <path class="cls-1" d="M28.97,18.63c.59-1.63,2.14-2.79,3.97-2.79s3.39,1.16,3.97,2.79"/>
+        <circle class="cls-5" cx="32.94" cy="20.06" r="1"/>
+        <circle class="cls-5" cx="75.27" cy="20.06" r="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

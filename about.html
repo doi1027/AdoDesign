@@ -132,8 +132,8 @@
                         <img class="important_item" src="./SVG/important_item.svg" alt="">
                         <p class="important_title01">好</p>
                         <p class="important_title02">奇心</p>
+                        <img class="important_line" src="./SVG/important_line.svg" alt="">
                     </div>
-                    <img class="important_line" src="./SVG/important_line.svg" alt="">
                     <p class="important_text">何事にもまず挑戦します。知識や情報収集を欠かさず追い求めます。
                         デザインに対する興味が強く、スキルアップは特に集中して取り組むことができます。</p>
                 </div>
@@ -153,8 +153,8 @@
                         <img class="important_item" src="./SVG/important_item.svg" alt="">
                         <p class="important_title01">課</p>
                         <p class="important_title02">題解決</p>
+                        <img class="important_line" src="./SVG/important_line.svg" alt="">
                     </div>
-                    <img class="important_line" src="./SVG/important_line.svg" alt="">
                     <p class="important_text">何事にも諦めず挑戦します。あらゆる角度から解決策を見出せるよう努めます。
                         ゴールを明確にし、お客様と共により意味のあるデザインを完成させていきます。</p>
                 </div>
@@ -166,8 +166,8 @@
                         <img class="important_item" src="./SVG/important_item.svg" alt="">
                         <p class="important_title01">期</p>
                         <p class="important_title02">日管理</p>
+                        <img class="important_line" src="./SVG/important_line.svg" alt="">
                     </div>
-                    <img class="important_line" src="./SVG/important_line.svg" alt="">
                     <p class="important_text">デザインが良くても期日に間に合わなければ意味がありません。
                         期日に間に合ってもデザインが悪くては意味がありません。
                         お客様の時間はもちろん、自分の時間も大切にし、満足度を高められるよう努めます。</p>
@@ -181,6 +181,15 @@
                 <a href="index.html">戻る</a>
             </div>
         </section>
+        <script>
+            // ハンバーガーメニュー
+            $(function () {
+                $('.menu_btn').on('click', function () {
+                    $('.menu_btn').toggleClass('open');
+                    $('.menu_nav').fadeToggle();
+                })
+            })
+        </script>
 </body>
 
 </html>

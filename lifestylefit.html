@@ -88,6 +88,14 @@
         </section>
     </main>
     <script>
+        // ハンバーガーメニュー
+        $(function () {
+            $('.menu_btn').on('click', function () {
+                $('.menu_btn').toggleClass('open');
+                $('.menu_nav').fadeToggle();
+            })
+        })
+        // モーダルウインドウ
         $(function () {
             $('.open_btn').on('click', function () {
                 $('.open_btn').toggleClass('open');

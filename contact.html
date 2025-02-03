@@ -93,6 +93,15 @@
 
             </div>
     </main>
+    <script>
+        // ハンバーガーメニュー
+        $(function () {
+            $('.menu_btn').on('click', function () {
+                $('.menu_btn').toggleClass('open');
+                $('.menu_nav').fadeToggle();
+            })
+        })
+    </script>
     <script type="text/javascript">
         let submitted = false;
     </script>

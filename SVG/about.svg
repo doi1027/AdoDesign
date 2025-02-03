@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 112.8 290.7">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 112.8 350">
   <defs>
     <style>
       .cls-1, .cls-2, .cls-3 {
@@ -28,10 +28,10 @@
       <g id="_メインページ">
         <g>
           <g class="cls-1">
-            <text class="cls-2" transform="translate(86.8 289.9) rotate(-90)"><tspan x="0" y="0">about</tspan></text>
+            <text class="cls-2" transform="translate(86.8 319.9) rotate(-90)"><tspan x="0" y="0">about</tspan></text>
           </g>
           <g class="cls-1">
-            <text class="cls-3" transform="translate(83.8 292.9) rotate(-90)"><tspan x="0" y="0">about</tspan></text>
+            <text class="cls-3" transform="translate(83.8 322.9) rotate(-90)"><tspan x="0" y="0">about</tspan></text>
           </g>
         </g>
       </g>

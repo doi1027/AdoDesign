@@ -118,6 +118,13 @@
                 </div>
     </main>
     <script>
+        // ハンバーガーメニュー
+        $(function () {
+            $('.menu_btn').on('click', function () {
+                $('.menu_btn').toggleClass('open');
+                $('.menu_nav').fadeToggle();
+            })
+        })
         // 絞り込み
         var searchItem = '.search_item';   // 絞り込む項目を選択するエリア
         var listItem = '.list_item';       // 絞り込み対象のアイテム

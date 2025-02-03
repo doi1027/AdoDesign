@@ -231,7 +231,7 @@
 .contact_decoration {
   position: absolute;
   width: 8%;
-  padding-left: 10px;
+  left: 10px;
 }
 .about_decoration {
   bottom: 95px;
@@ -406,7 +406,8 @@
   justify-content: center;
   gap: 150px;
 }
-.skill_content img {
+.skill_left img,
+.skill_right img {
   width: 160px;
   height: 160px;
   align-items: center;
@@ -490,9 +491,13 @@
   font-weight: normal;
 }
 /* もっとみるボタン */
+.center_btn {
+  position: relative;
+  text-align: center;
+  width: 315px;
+}
 .center_btn a {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   font-size: 16px;
@@ -514,17 +519,52 @@
   opacity: 1;
   transition: all 0.2s;
 }
-/* .center_btn a:after {
-  content: "";
-  height: calc(tan(60deg) * 30px / 2);
-  width: 25px;
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
-  background-color: #705d53;
+/* .about_btn,
+.works_btn {
+  position: relative;
+  margin-left: auto;
+  margin-top: 65px;
+  width: 315px;
+}
+.about_btn a,
+.works_btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 315px;
+  height: 60px;
+  transition: 0.3s ease-in-out;
+  background: #f7f3e9;
+  border-radius: 60px;
+  border: 1px solid #c7b299;
+
+  box-shadow: 2px 4px #c7b299;
+}*/
+.about_btn img,
+.works_btn img {
+  width: 16px;
+  height: 18px;
   position: absolute;
   right: 20px;
-  border-radius: 20px;
-  transition: 0.3s ease-in-out;
-} */
+  top: 50%;
+  transform: translateY(-50%);
+}
+.about_btn:hover,
+.works_btn:hover {
+  transform: translate3d(0.2rem, 0.2rem, 0);
+  box-shadow: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.about_btn:hover a {
+  box-shadow: none;
+}
+.about_btn img:hover,
+.works_btn img:hover {
+  left: 200px;
+}
+*/
 /* インポータント */
 .important_content01 {
   display: flex;
@@ -533,6 +573,7 @@
   padding: 0 12% 0 13%;
 }
 .important_conteiner {
+  position: relative;
   display: flex;
 }
 .important_title01 {
@@ -598,6 +639,10 @@
   margin-top: 40px;
 }
 /* ワークス */
+.works_dotline {
+  position: relative;
+  top: 50px;
+}
 #works {
   position: relative;
 }
@@ -661,23 +706,31 @@
   padding-top: 4%;
 }
 /* Read More */
-/* .web_slider_item img::before,
-.web_slider_item img::after,
-.graphic_slider_item img::before,
-.graphic_slider_item img::after {
+.web_slider_item,
+.graphic_slider_item {
+  position: relative;
+}
+.web_slider_item::before,
+.web_slider_item::after,
+.graphic_slider_item::before,
+.graphic_slider_item::after {
   content: "";
   display: block;
   top: 0;
   left: 0;
   transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
   opacity: 0;
+  position: absolute;
 }
-.web_slider_item img::before,
-.graphic_slider_item img::before {
+.web_slider_item::before,
+.graphic_slider_item::before {
   background: rgba(243, 236, 216, 0.6);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
 }
-.web_slider_item img::after,
-.graphic_slider_item img::after {
+.web_slider_item::after,
+.graphic_slider_item::after {
   color: #605855;
   content: "Read More";
   font-family: ta-oonishi, sans-serif;
@@ -689,10 +742,12 @@
   bottom: 0;
   right: 0;
 }
-.web_slider_item img:hover::before,
-.web_slider_item img:hover::after {
+.web_slider_item:hover::before,
+.web_slider_item:hover::after,
+.graphic_slider_item:hover::before,
+.graphic_slider_item:hover::after {
   opacity: 1;
-} */
+}
 /* 絞り込み */
 .search {
   display: flex;
@@ -1044,6 +1099,14 @@ footer {
   /*背景の大きさ */
   padding: 20px;
   cursor: pointer;
+  position: relative;
+}
+
+.footer_item a {
+  line-height: 56px;
+  width: 53px;
+  display: block;
+  text-align: center;
 }
 .footer_item.is-active {
   background-image: url("../SVG/footer_item.svg");
@@ -1052,13 +1115,30 @@ footer {
   background-size: contain;
   color: #fcfaf5;
 }
-.footer_item:hover {
+.footer_item::after {
   background-image: url("../SVG/footer_item_hover.svg");
   background-position: center; /* 中央に配置 */
   background-repeat: no-repeat; /* 繰り返しを防止 */
   background-size: contain;
   color: #fcfaf5;
   transition: 1s;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.footer_item:hover a {
+  color: #fcfaf5;
+  position: relative;
+  z-index: 100;
+}
+.footer_item:hover::after {
+  opacity: 1;
 }
 .footer_logo {
   width: 174px;

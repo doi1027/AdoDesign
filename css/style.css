@@ -740,7 +740,40 @@
   width: 100%;
 }
 /* ページネーション */
+.pagination {
+  display: flex;
+  align-items: center;
+}
+.page-item.number {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.page-item.next {
+  width: 90px;
+  height: 35px;
+  border-radius: 50%;
+}
+.page-item.number,
+.page-item.next {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #e5d5cc;
+  border: solid 1px #705d53;
+  font-weight: bold;
+  transition: all 0.15s linear;
+}
 
+.page-item.first a,
+.page-item.prev a,
+.page-item.last a {
+  display: none;
+}
 /* ワークス詳細ページ */
 .works_detail {
   display: flex;

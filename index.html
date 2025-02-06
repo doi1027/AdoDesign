@@ -41,24 +41,26 @@
                 <p>想いをカタチにして届けます</p>
             </div>
         </div>
-        <div class="header_wrap">
-            <h1 class="header_logo">
-                <img src="./SVG/logo3.svg">
-            </h1>
-            <div class="menu_btn">
-                <p>menu</p>
-                <div>
-                    <span></span>
+        <div class="is-fixed" style="opacity: 1;">
+            <div class="header_wrap">
+                <h1 class="header_logo">
+                    <img src="./SVG/logo_9.svg">
+                </h1>
+                <div class="menu_btn">
+                    <p>menu</p>
+                    <div>
+                        <span></span>
+                    </div>
                 </div>
+                <nav class="menu_nav">
+                    <ul>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./about.html">about</a></li>
+                        <li><a href="./works.html">works</a></li>
+                        <li><a href="./contact.html">contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="menu_nav">
-                <ul>
-                    <li><a href="./index.html">home</a></li>
-                    <li><a href="./about.html">about</a></li>
-                    <li><a href="./works.html">works</a></li>
-                    <li><a href="./contact.html">contact</a></li>
-                </ul>
-            </nav>
         </div>
         <div class="scrolldown1"><span>Scroll</span></div>
     </header>
@@ -224,6 +226,7 @@
             </div>
             <div class="center_btn">
                 <a href="about.html">もっとみる</a>
+                <img src="./SVG/btn_item.svg" alt="">
             </div>
         </section>
         <!-- ワークス -->
@@ -290,6 +293,7 @@
 
                 <div class="center_btn">
                     <a href="works.html">もっとみる</a>
+                    <img src="./SVG/btn_item.svg" alt="">
                 </div>
                 <img class="works_dotline" src="./SVG/dotline.svg" alt="">
 
@@ -306,6 +310,7 @@
                 ご依頼やご相談等お気軽にお問い合わせください。</p>
             <div class="center_btn">
                 <a href="contact.html">お問い合わせはこちら</a>
+                <img src="./SVG/btn_item.svg" alt="">
             </div>
             <img class="contact_decoration" src="./SVG/contact.svg" alt="">
         </section>
@@ -325,7 +330,7 @@
                     </ul>
                 </nav>
                 <h1 class="footer_logo">
-                    <a href="#home"><img src="./SVG/logo3.svg"></a>
+                    <a href="#home"><img src="./SVG/logo_9.svg"></a>
                 </h1>
             </div>
             <p class="footer_outer">© 2025 Ado Desgin</p>
@@ -334,6 +339,23 @@
             <a href="#home">Page Top</a>
         </div>
     </footer>
+    <!-- <div class="context">
+            <h1>Pure Css Animated Background</h1>
+        </div> -->
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <!-- <li></li>
+            <li></li>
+            <li></li>
+            <li></li> -->
+        </ul>
+    </div>
     <script>
         // ローディング
         // let loading = document.querySelector(".loading");
@@ -352,6 +374,15 @@
                 $('.menu_nav').fadeToggle();
             })
         })
+        // ヘッダー
+        $(window).scroll(function () {           /* スクロールされた時 */
+            var pos = $('main').offset();          /* mvを過ぎたmainタグの高さを取得して変数[pos]に格納 */
+            if ($(this).scrollTop() > pos.top) {   /* 変数[pos]より、スクロールされていたら */
+                $('.is-fixed').fadeIn();                /* ヘッダーをふわっと表示 */
+            } else {                               /* それ以外の場合 */
+                $('.is-fixed').fadeOut();               /* ヘッダーをふわっと非表示 */
+            }
+        });
         // ウェブスライダー
         $(function () {
             $(".web_slider").slick({
@@ -388,6 +419,37 @@
                 pauseOnHover: false,
                 arrows: false,
                 rtl: true,
+            });
+        });
+        // ページトップ
+        $(function () {
+            // 変数にクラスを入れる
+            var btn = $('.pagetop');
+
+            //スクロールしてページトップから100に達したらボタンを表示
+            $(window).on('load scroll', function () {
+                if ($(this).scrollTop() > 100) {
+                    btn.addClass('active');
+                } else {
+                    btn.removeClass('active');
+                }
+            });
+            //フッターの手前でボタンを止める
+            $(window).on('load scroll', function () {
+                var height = $(document).height(), //ドキュメントの高さ 
+                    position = window.innerHeight + $(window).scrollTop(), //ページトップから現在地までの高さ
+                    footer = $('footer').height(); //フッターの高さ
+                if (height - position < footer) {
+                    btn.addClass('absolute');
+                } else {
+                    btn.removeClass('absolute');
+                }
+            });
+            //スクロールしてトップへ戻る
+            btn.on('click', function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                });
             });
         });
     </script>

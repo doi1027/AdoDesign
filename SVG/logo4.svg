@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308.06 99.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #715e54;
+        font-family: GillSans-SemiBold, 'Gill Sans';
+        font-size: 50.05px;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        font-size: 91.22px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #c5b098;
+        font-family: Klee-Demibold-83pv-RKSJ-H, Klee;
+        font-weight: 300;
+      }
+
+      .cls-3 {
+        font-size: 80.4px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.08em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.18em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-10 {
+        fill: none;
+        stroke: #c3ae97;
+        stroke-miterlimit: 10;
+        stroke-width: 2.96px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー_1">
+    <g>
+      <text class="cls-1" transform="translate(81.9 67.38)"><tspan class="cls-4" x="0" y="0">A</tspan><tspan class="cls-5" x="32.39" y="0">d</tspan><tspan x="56.81" y="0">o</tspan><tspan class="cls-7" x="85.5" y="0"> </tspan><tspan class="cls-6" x="90.4" y="0">D</tspan><tspan class="cls-8" x="126.08" y="0">e</tspan><tspan class="cls-6" x="149.92" y="0">si</tspan><tspan class="cls-9" x="176.54" y="0">g</tspan><tspan x="199.08" y="0">n</tspan></text>
+      <g>
+        <text class="cls-2" transform="translate(9 80.28)"><tspan x="0" y="0">A</tspan></text>
+        <circle class="cls-10" cx="35.84" cy="52.47" r="33.08"/>
+        <text class="cls-3" transform="translate(0 80.28)"><tspan x="0" y="0">I</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -30,6 +30,7 @@
     <header class="first_header">
         <div class="first_view">
             <img class="first_view01" src="./SVG/first view_まる.svg">
+            <img class="sp_first_view01" src="./SVG/sp_first view_まる.svg">
             <img class="first_view02" src="./SVG/first view_ハート.svg">
             <img class="first_view03" src="./SVG/first view_つぶつぶ.svg">
         </div>
@@ -339,9 +340,6 @@
             <a href="#home">Page Top</a>
         </div>
     </footer>
-    <!-- <div class="context">
-            <h1>Pure Css Animated Background</h1>
-        </div> -->
     <div class="area">
         <ul class="circles">
             <li></li>
@@ -350,10 +348,6 @@
             <li></li>
             <li></li>
             <li></li>
-            <!-- <li></li>
-            <li></li>
-            <li></li>
-            <li></li> -->
         </ul>
     </div>
     <script>
@@ -378,9 +372,9 @@
         $(window).scroll(function () {           /* スクロールされた時 */
             var pos = $('main').offset();          /* mvを過ぎたmainタグの高さを取得して変数[pos]に格納 */
             if ($(this).scrollTop() > pos.top) {   /* 変数[pos]より、スクロールされていたら */
-                $('.is-fixed').fadeIn();                /* ヘッダーをふわっと表示 */
+                $('.is-fixed').addClass('active');                /* ヘッダーをふわっと表示 */
             } else {                               /* それ以外の場合 */
-                $('.is-fixed').fadeOut();               /* ヘッダーをふわっと非表示 */
+                $('.is-fixed').removeClass('active');               /* ヘッダーをふわっと非表示 */
             }
         });
         // ウェブスライダー
@@ -404,6 +398,20 @@
                 pauseOnHover: false,
                 // 矢印なしに
                 arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 1000,
+                        settings: {
+                            slidesToShow: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
             });
         });
         // グラフィックスライダー
@@ -426,9 +434,9 @@
             // 変数にクラスを入れる
             var btn = $('.pagetop');
 
-            //スクロールしてページトップから100に達したらボタンを表示
+            //スクロールしてアバウトが過ぎたらボタンを表示
             $(window).on('load scroll', function () {
-                if ($(this).scrollTop() > 100) {
+                if (btn.offset().top > $('#about').offset().top + $('#about').height()) {
                     btn.addClass('active');
                 } else {
                     btn.removeClass('active');

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -25,7 +26,21 @@
 </head>
 
 <body id="home">
-    <!-- <div class="loading">Loading</div> -->
+    <!-- ローディング -->
+    <div class="loading">
+        <p class="loading_text">
+            <span>l</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+        </p>
+    </div>
     <!-- ヘッダー -->
     <header class="first_header">
         <div class="first_view">
@@ -340,27 +355,60 @@
             <a href="#home">Page Top</a>
         </div>
     </footer>
+    <!-- パララックス -->
     <div class="area">
-        <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <img class="circles01" src="./SVG/all要素3.svg" alt="">
+        <img class="circles02" src="./SVG/all要素2.svg" alt="">
+        <img class="circles03" src="./SVG/all要素5.svg" alt="">
+        <img class="circles04" src="./SVG/all要素1.svg" alt="">
+        <img class="circles05" src="./SVG/all要素4.svg" alt="">
+        <img class="circles06" src="./SVG/about_6.svg" alt="">
     </div>
     <script>
         // ローディング
-        // let loading = document.querySelector(".loading");
-        // let letters = loading.textContent.split("");
-        // loading.textContent = "";
-        // letters.forEach((letter, i) => {
-        //     let span = document.createElement("span");
-        //     span.textContent = letter;
-        //     span.style.animationDelay = `${i / 10}s`;
-        //     loading.append(span);
-        // });
+        $(function () {
+            // ローダー終了
+            function end_loader() {
+                $('.loading').fadeOut(800);
+            }
+            // テキスト表示
+            function show_txt() {
+                $('.loading .loading_text span').fadeIn(400);
+            }
+            // テキスト非表示
+            function hide_txt() {
+                $('.loading .loading_text span').fadeOut(400);
+            }
+
+            // タイマー処理
+            $(window).on('load', function () {
+                // 処理①
+                setTimeout(function () {
+                    show_txt();
+                }, 1000)
+                // 処理②
+                setTimeout(function () {
+                    hide_txt();
+                }, 3500)
+                // 処理③
+                setTimeout(function () {
+                    end_loader();
+                }, 4500)
+            })
+        })
+        // ローディング
+        // window.onload = function () {
+        //     const spinner = document.getElementById("loading");
+        //     spinner.classList.add("loaded");
+        //     let loading = document.querySelector(".loading");
+        //     let letters = loading.textContent.split("");
+        //     loading.textContent = "";
+        //     letters.forEach((letter, i) => {
+        //         let span = document.createElement("span");
+        //         span.textContent = letter;
+        //         span.style.animationDelay = `${i / 10}s`;
+        //         loading.append(span);
+        //     });
         // ハンバーガーメニュー
         $(function () {
             $('.menu_btn').on('click', function () {
@@ -398,17 +446,16 @@
                 pauseOnHover: false,
                 // 矢印なしに
                 arrows: false,
+                useTransform: false,
                 responsive: [
-                    {
-                        breakpoint: 1000,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    },
                     {
                         breakpoint: 767,
                         settings: {
                             slidesToShow: 1,
+                            autoplaySpeed: 3000,
+                            speed: 300,
+                            arrows: true,
+                            swipe: true,
                         }
                     }
                 ]
@@ -427,6 +474,19 @@
                 pauseOnHover: false,
                 arrows: false,
                 rtl: true,
+                useTransform: false,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            autoplaySpeed: 3000,
+                            speed: 300,
+                            arrows: true,
+                            swipe: true,
+                        }
+                    }
+                ]
             });
         });
         // ページトップ
@@ -460,6 +520,28 @@
                 });
             });
         });
+    </script>
+    <!-- パララックス -->
+    <script>
+        // ①thumbnailクラスのついた要素を定数「image」に格納
+        const image = document.getElementsByClassName('area img');
+        // ②simpleParallaxを宣言
+        new simpleParallax(image);
+
+        // const image = document.getElementsByClassName('circles02');
+        // new simpleParallax(image);
+
+        // const image = document.getElementsByClassName('circles03');
+        // new simpleParallax(image);
+
+        // const image = document.getElementsByClassName('circles04');
+        // new simpleParallax(image);
+
+        // const image = document.getElementsByClassName('circles05');
+        // new simpleParallax(image);
+
+        // const image = document.getElementsByClassName('circles06');
+        // new simpleParallax(image);
     </script>
 </body>
 

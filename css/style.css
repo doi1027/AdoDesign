@@ -31,6 +31,16 @@
   display: inline-block; /*横並びにしつつアニメーションを適用*/
   animation: 0.5s bound-anim ease-in infinite alternate;
 }
+/*===========
+inview
+===========*/
+.fadeIn {
+  opacity: 0;
+  transition: 2s;
+}
+.fadeIn.is-show {
+  opacity: 1;
+}
 /* ヘッダー */
 .first_header {
   height: 100vh;
@@ -92,14 +102,14 @@
 .header_box01 {
   background-color: #fcfaf5;
   text-align: start;
-  max-width: 804px;
+  width: 804px;
   height: 77px;
   border-radius: 0 20px 20px 0;
   margin-bottom: 23px;
 }
 .header_box02 {
   background-color: #fcfaf5;
-  max-width: 864px;
+  width: 864px;
   height: 77px;
   border-radius: 0 20px 20px 0;
 }

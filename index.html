@@ -14,6 +14,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+
     <script>
         (function (d) {
             var config = {
@@ -39,18 +42,33 @@
             <img class="first_view02" src="./SVG/first view_ハート.svg">
             <img class="first_view03" src="./SVG/first view_つぶつぶ.svg">
         </div>
-        <div class="header_container">
-            <div class="header_box01">
+        <div class="header_container section">
+
+            <div class="header_box01 inview_re fadeIn_left">
                 <p>日々流れる時間を有意義に</p>
             </div>
-            <div class="header_box02">
+            <div class="header_box02 inview_re fadeIn_left">
                 <p>想いをカタチにして届けます</p>
             </div>
         </div>
+
+        <!-- <div class="section">
+            <div class="imgBox inview_re fadeIn_left">
+              <img src="https://125naroom.com/demo/img/simple01.jpg" alt="">
+            </div>
+            <div class="imgBox inview_re fadeIn_left">
+              <img src="https://125naroom.com/demo/img/simple02.jpg" alt="">
+            </div>
+            <div class="txtBox inview_re fadeIn_left">
+              <p>ふわっと</p>
+            </div>
+            <p class="_a"><a href="https://125naroom.com/web/3532" target="_blank" class="link">View the note</a></p>
+          </div> -->
+
         <div class="is-fixed" style="opacity: 1;">
             <div class="header_wrap">
                 <h1 class="header_logo">
-                    <img src="./SVG/logo_9.svg">
+                    <a href="#home"><img src="./SVG/logo_9.svg"></a>
                 </h1>
                 <div class="menu_btn">
                     <p>menu</p>
@@ -81,7 +99,7 @@
             </div>
             <div class="about_content">
                 <img class="about_decoration" src="./SVG/about.svg" alt="">
-                <div class="about_left01">
+                <div class="about_left01 inview_re fadeIn_left">
                     <p>日々流れる時間を有意義に過ごしたい。<br>
                         想いをカタチにして喜びや感動を届けたい。デザインで笑顔に。<br>
                         <br>
@@ -392,7 +410,7 @@
                     span.style.animationDelay = `${i / 10}s`;
                     loading.append(span);
                 });
-            }
+            };
             // テキスト非表示
             function hide_txt() {
                 $('.loading .loading_text span').fadeOut(400);
@@ -412,8 +430,8 @@
                 setTimeout(function () {
                     end_loader();
                 }, 3000)
-            })
-        })
+            });
+        });
         $(function () {
             var webStorage = function () {
                 if (sessionStorage.getItem('access')) {
@@ -436,13 +454,24 @@
             }
             webStorage();
         });
+        // フェードイン
+        $(function () {
+            $(".inview_re").on("inview", function (event, isInView) {
+                if (isInView) {
+                    $(this).stop().addClass("is-show");
+                } else {
+                    $(this).stop().removeClass("is-show");
+                }
+            });
+        });
+
         // ハンバーガーメニュー
         $(function () {
             $('.menu_btn').on('click', function () {
                 $('.menu_btn').toggleClass('open');
                 $('.menu_nav').fadeToggle();
-            })
-        })
+            });
+        });
         // ヘッダー
         $(window).scroll(function () {
             /* スクロールされた時 */

@@ -7,9 +7,11 @@
     <title>works</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/gh/alfrcr/paginathing/dist/paginathing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -46,112 +48,145 @@
         </div>
     </header>
     <main>
-        <section id="works">
-            <div class="title">
-                <h2>works</h2>
-                <p>つくったもの</p>
-                <p>・・・</p>
-            </div>
-            <div>
-                <ul class="search">
-                    <li class="search_item is-active" data-group="">ALL</li>
-                    <li class="search_item" data-group="web">ウェブ</li>
-                    <li class="search_item" data-group="graphic">グラフィック</li>
-                </ul>
-                <div class="list">
-                    <div class="list_item" data-group="web">
-                        <div>
-                            <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
-                        </div>
-                        <p class="works_text01">LIFE STYLE FIT</p>
-                        <p class="works_text02">デザイン(架空LP)</p>
-                    </div>
-                    <div class="list_item" data-group="web">
-                        <div><a href="lifestylefit.html">
-                                <img src="./Works/1x/DESIGN CAFE.png" alt=""></a>
-                        </div>
-                        <p class="works_text01">DESIGN CAFE</p>
-                        <p class="works_text02">コーディング(トレースで作成)</p>
-                    </div>
-                    <div class="list_item" data-group="web">
-                        <div>
-                            <img src="./Works/1x/WORKERS.png" alt="">
-                        </div>
-                        <p class="works_text01">WORKERS</p>
-                        <p class="works_text02">デザイン(トレースで作成)</p>
-                    </div>
-                    <div class="list_item" data-group="web">
-                        <div>
-                            <img src="./Works/1x/TRRRRIP.png" alt="">
-                        </div>
-                        <p class="works_text01">TRRRRIP</p>
-                        <p class="works_text02">デザイン(トレースで作成)</p>
-                    </div>
-                    <div class="list_item" data-group="web">
-                        <div>
-                            <img src="./Works/1x/dezasutamobile.png" alt="">
-                        </div>
-                        <p class="works_text01">デザスタmobile</p>
-                        <p class="works_text02">デザイン(トレースで作成)</p>
-                    </div>
-                    <div class="list_item" data-group="web">
-                        <div>
-                            <img src="./Works/1x/luxury_デラックスバーガー.png" alt="">
-                        </div>
-                        <p class="works_text01">高級verデラックスバーガー</p>
-                        <p class="works_text02">デザイン(架空バナー)</p>
-                    </div>
-                    <div class="list_item" data-group="web">
-                        <div>
-                            <img src="./Works/1x/POP_デラックスバーガー.png" alt="">
-                        </div>
-                        <p class="works_text01">POPverデラックスバーガー</p>
-                        <p class="works_text02">デザイン(架空バナー)</p>
-                    </div>
-                    <div class="list_item" data-group="graphic">
-                        <div>
-                            <img src="./Works/1x/OPENHOUSE.jpg" alt="">
-                        </div>
-                        <p class="works_text01">OPENHOUSE</p>
-                        <p class="works_text02">デザイン(トレースで作成)</p>
-                    </div>
-                    <div class="list_item" data-group="graphic">
-                        <div>
-                            <img src="./Works/1x/OPENHOUSE.jpg" alt="">
-                        </div>
-                        <p class="works_text01">OPENHOUSE</p>
-                        <p class="works_text02">デザイン(トレースで作成)</p>
-                    </div>
-                    <div class="list_item" data-group="graphic">
-                        <div>
-                            <img src="./Works/1x/OPENHOUSE.jpg" alt="">
-                        </div>
-                        <p class="works_text01">OPENHOUSE</p>
-                        <p class="works_text02">デザイン(トレースで作成)</p>
-                    </div>
-                    <div class="list_item" data-group="graphic">
-                        <div>
-                            <img src="./Works/1x/OPENHOUSE.jpg" alt="">
-                        </div>
-                        <p class="works_text01">OPENHOUSE</p>
-                        <p class="works_text02">デザイン(トレースで作成)</p>
-                    </div>
-                    <div class="list_item" data-group="graphic">
-                        <div>
-                            <img src="./Works/1x/OPENHOUSE.jpg" alt="">
-                        </div>
-                        <p class="works_text01">OPENHOUSE</p>
-                        <p class="works_text02">デザイン(トレースで作成)</p>
-                    </div>
-                    <div class="list_item" data-group="graphic">
-                        <div>
-                            <img src="./Works/1x/OPENHOUSE.jpg" alt="">
-                        </div>
-                        <p class="works_text01">OPENHOUSE</p>
-                        <p class="works_text02">デザイン(トレースで作成)</p>
-                    </div>
+        <div class="area">
+            <section id="works">
+                <div class="title">
+                    <h2>works</h2>
+                    <p>つくったもの</p>
+                    <p>・・・</p>
                 </div>
+                <div>
+                    <ul class="search">
+                        <li class="search_item is-active" data-group="">ALL</li>
+                        <li class="search_item" data-group="web">ウェブ</li>
+                        <li class="search_item" data-group="graphic">グラフィック</li>
+                    </ul>
+                    <div class="list">
+                        <div class="list_item" data-group="web">
+                            <a href="./lifestylefit.html">
+                                <div class="web_slider_item">
+                                    <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                                </div>
+                            </a>
+                            <p class="works_text01">LIFE STYLE FIT</p>
+                            <p class="works_text02">デザイン(架空LP)</p>
+                        </div>
+                        <div class="list_item" data-group="web">
+                            <a href="./designcafe.html">
+                                <div class="web_slider_item">
+                                    <img src="./Works/1x/DESIGN CAFE.png" alt="">
+                                </div>
+                            </a>
+                            <p class="works_text01">DESIGN CAFE</p>
+                            <p class="works_text02">コーディング(トレースで作成)</p>
+                        </div>
+                        <div class="list_item" data-group="web">
+                            <a href="./workers.html">
+                                <div class="web_slider_item">
+                                    <img src="./Works/1x/WORKERS.png" alt="">
+
+                                </div>
+                            </a>
+                            <p class="works_text01">WORKERS</p>
+                            <p class="works_text02">デザイン(トレースで作成)</p>
+                        </div>
+                        <div class="list_item" data-group="web">
+                            <a href="./dezasutamobile.html">
+                                <div class="web_slider_item">
+                                    <img src="./Works/1x/dezasutamobile.png" alt="">
+
+                                </div>
+                            </a>
+                            <p class="works_text01">デザスタmobile</p>
+                            <p class="works_text02">デザイン(トレースで作成)</p>
+                        </div>
+                        <div class="list_item" data-group="web">
+                            <a href="./trrrrip.html">
+                                <div class="web_slider_item">
+                                    <img src="./Works/1x/TRRRRIP.png" alt="">
+
+                                </div>
+                            </a>
+                            <p class="works_text01">TRRRRIP</p>
+                            <p class="works_text02">デザイン(トレースで作成)</p>
+                        </div>
+
+                        <div class="list_item" data-group="web">
+                            <a href="./luxury burger.html">
+                                <div class="web_slider_item">
+                                    <img src="./Works/1x/luxuryburger.png" alt="">
+
+                                </div>
+                            </a>
+                            <p class="works_text01">高級verデラックスバーガー</p>
+                            <p class="works_text02">デザイン(架空バナー)</p>
+                        </div>
+                        <div class="list_item" data-group="web">
+                            <a href="./popburger.html">
+                                <div class="web_slider_item">
+                                    <img src="./Works/1x/popburger.png" alt="">
+
+                                </div>
+                            </a>
+                            <p class="works_text01">POPverデラックスバーガー</p>
+                            <p class="works_text02">デザイン(架空バナー)</p>
+                        </div>
+                        <div class="list_item" data-group="graphic">
+                            <a href="./openhouse.html">
+                                <div class="graphic_slider_item">
+                                    <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                                </div>
+                            </a>
+                            <p class="works_text01">OPENHOUSE</p>
+                            <p class="works_text02">デザイン(トレースで作成)</p>
+                        </div>
+                        <div class="list_item" data-group="graphic">
+                            <div>
+                                <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                            </div>
+                            <p class="works_text01">OPENHOUSE</p>
+                            <p class="works_text02">デザイン(トレースで作成)</p>
+                        </div>
+                        <div class="list_item" data-group="graphic">
+                            <div>
+                                <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                            </div>
+                            <p class="works_text01">OPENHOUSE</p>
+                            <p class="works_text02">デザイン(トレースで作成)</p>
+                        </div>
+                        <div class="list_item" data-group="graphic">
+                            <div>
+                                <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                            </div>
+                            <p class="works_text01">OPENHOUSE</p>
+                            <p class="works_text02">デザイン(トレースで作成)</p>
+                        </div>
+                        <div class="list_item" data-group="graphic">
+                            <div>
+                                <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                            </div>
+                            <p class="works_text01">OPENHOUSE</p>
+                            <p class="works_text02">デザイン(トレースで作成)</p>
+                        </div>
+                        <div class="list_item" data-group="graphic">
+                            <div>
+                                <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                            </div>
+                            <p class="works_text01">OPENHOUSE</p>
+                            <p class="works_text02">デザイン(トレースで作成)</p>
+                        </div>
+                    </div>
+            </section>
+            <!-- パララックス -->
+            <img class="circles01 circle" src="./SVG/all要素3.svg" alt="">
+            <img class="circles02 circle" src="./SVG/all要素2.svg" alt="">
+            <img class="circles03 circle" src="./SVG/all要素5.svg" alt="">
+            <img class="circles04 circle" src="./SVG/all要素1.svg" alt="">
+            <img class="circles05 circle" src="./SVG/all要素4.svg" alt="">
+            <img class="circles06 circle" src="./SVG/all要素6.svg" alt="">
+        </div>
     </main>
+    <!-- フッター -->
     <footer>
         <div>
             <img src="./SVG/footer.svg" alt="">
@@ -231,6 +266,18 @@
             // 絞り込み後にページネーションを初期化
             initializePagination();
         }
+    </script>
+    <!-- パララックス -->
+    <script>
+        // ①thumbnailクラスのついた要素を定数「image」に格納
+        const image = document.getElementsByClassName('circle');
+        // ②simpleParallaxを宣言
+        new simpleParallax(image, {
+            orientation: 'up',
+            scale: 1.5,
+            overflow: true,
+            delay: 2,
+        });
     </script>
 </body>
 

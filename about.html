@@ -7,7 +7,9 @@
     <title>about</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -44,174 +46,197 @@
         </div>
     </header>
     <main>
-        <!-- アバウト -->
-        <section id="second_about">
-            <div class="title">
-                <h2>about</h2>
-                <p>わたしのこと</p>
-                <p>・・・</p>
-            </div>
-            <div class="about_content">
-                <div class="about_left02">
-                    <p class="dot_line">仕事に子育てに奮闘中の2児の母です。</p>
-                    <p class="dot_line">短大卒業後、広告代理店に就職。<br>
-                        営業事務として入稿から納品、校正などの印刷関係を担当しました。<br>
-                        管理会社に転職。営業事務として募集業務を担当しました。<br>
-                        募集資料を作成する中で、見る人にわかりやすく、興味を持ってもらうためにはどのようなデザインにしよう。と考える時間が好きになりました。
-                    </p>
-                    <p class="dot_line">独学でデザインの勉強を始め、illustratorやPhotoshop、色彩関係の資格を取得。<br>
-                        デザインのことをもっと学びたい！と思った時にウェブデザイナーという仕事を知りました。<br>
-                        子供との時間を増やしたいという思いがあり、挑戦するきっかけになりました。<br>
-                        4ヶ月間でウェブデザインについて学び、2ヶ月間でグラフィックデザインについても学びました。
-                    </p>
-                    <p>これらの経験と、向上心でお客様の課題解決のお手伝いができたらと考えています。</p>
+        <div class="area">
+            <!-- アバウト -->
+            <section id="second_about">
+                <div class="title">
+                    <h2>about</h2>
+                    <p>わたしのこと</p>
+                    <p>・・・</p>
                 </div>
-                <div class="about_right02">
-                    <p>はじめまして<br>
-                        ADO DESIGNの<br>
-                        あきです。</p>
-                    <img class="about_img_07" src="./SVG/about_似顔絵.svg" alt="似顔絵">
-                    <div class="about_wrap">
-                        <img class="about_img_01" src="./SVG/about_1.svg" alt="about_1">
-                        <img class="about_img_02" src="./SVG/about_2.svg" alt="about_2">
-                        <img class="about_img_03" src="./SVG/about_3.svg" alt="about_3">
-                        <img class="about_img_04" src="./SVG/about_4.svg" alt="about_4">
-                        <img class="about_img_05" src="./SVG/about_5.svg" alt="about_5">
-                        <img class="about_img_06" src="./SVG/about_6.svg" alt="about_6">
+                <div class="about_content">
+                    <div class="about_left02">
+                        <p class="dot_line">仕事に子育てに奮闘中の2児の母です。</p>
+                        <p class="dot_line">短大卒業後、広告代理店に就職。<br>
+                            営業事務として入稿から納品、校正などの印刷関係を担当しました。<br>
+                            管理会社に転職。営業事務として募集業務を担当しました。<br>
+                            募集資料を作成する中で、見る人にわかりやすく、興味を持ってもらうためにはどのようなデザインにしよう。と考える時間が好きになりました。
+                        </p>
+                        <p class="dot_line">独学でデザインの勉強を始め、illustratorやPhotoshop、色彩関係の資格を取得。<br>
+                            デザインのことをもっと学びたい！と思った時にウェブデザイナーという仕事を知りました。<br>
+                            子供との時間を増やしたいという思いがあり、挑戦するきっかけになりました。<br>
+                            4ヶ月間でウェブデザインについて学び、2ヶ月間でグラフィックデザインについても学びました。
+                        </p>
+                        <p>これらの経験と、向上心でお客様の課題解決のお手伝いができたらと考えています。</p>
+                    </div>
+                    <div class="about_right02">
+                        <p>はじめまして<br>
+                            ADO DESIGNの<br>
+                            あきです。</p>
+                        <img class="about_img_07" src="./SVG/about_似顔絵.svg" alt="似顔絵">
+                        <div class="about_wrap">
+                            <img class="about_img_01" src="./SVG/about_1.svg" alt="about_1">
+                            <img class="about_img_02" src="./SVG/about_2.svg" alt="about_2">
+                            <img class="about_img_03" src="./SVG/about_3.svg" alt="about_3">
+                            <img class="about_img_04" src="./SVG/about_4.svg" alt="about_4">
+                            <img class="about_img_05" src="./SVG/about_5.svg" alt="about_5">
+                            <img class="about_img_06" src="./SVG/about_6.svg" alt="about_6">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <img class="about_line03" src="./SVG/line.svg" alt="">
-        </section>
-        <!-- スキル -->
-        <section id="skill">
-            <div class="title">
-                <h2>skill</h2>
-                <p>できること</p>
-                <p>・・・</p>
-            </div>
-            <div class="skill_container01">
-                <div class="design_left">
-                    <img src="./SVG/skill_デザイン.svg" alt="デザイン">
+                <img class="about_line03" src="./SVG/line.svg" alt="">
+            </section>
+            <!-- スキル -->
+            <section id="skill">
+                <div class="title">
+                    <h2>skill</h2>
+                    <p>できること</p>
+                    <p>・・・</p>
                 </div>
-                <div class="design_right">
-                    <img src="./SVG/design.svg" alt="">
-                    <p>ウェブサイト・バナー、チラシ・パンフレットなどのデザインができます。<br>
-                        細かい部分まで妥協せずにやり切ることを意識しています。<br>
-                        余白感・視線の動きを大切にしてデザインしています。<br>
-                        また、見る人にとってわかりやすい情報設計を心がけています。</p>
-                </div>
-            </div>
-            <div class="skill_container02">
-                <div class="cording_left">
-                    <img src="./SVG/cording.svg" alt="">
-                    <p>HTML・CSSを用いてデザインを正しく再現することができます。<br>
-                        また、Javascript・jQueryを使用した動きのあるサイトの作成もできます。<br>
-                        レスポンシブにも対応しています。<br>
-                        誰が見ても分かりやすいコーディングを心がけています。<br>
-                        VS Codeを使用してコーディングしています。</p>
-                </div>
-                <div class="cording_right">
-                    <img src="./SVG/skill_コーディング.svg" alt="コーディング">
-                </div>
-            </div>
-        </section>
-        <img src="./SVG/dotline.svg" alt="">
-        <!-- インポータント -->
-        <section id="important">
-            <div class="title">
-                <h2>important</h2>
-                <p>たいせつにしていること</p>
-                <p>・・・</p>
-            </div>
-            <!-- 好奇心 -->
-            <div class="important_content01">
-                <div class="important_left01">
-                    <div class="important_conteiner">
-                        <img class="important_item" src="./SVG/important_item.svg" alt="">
-                        <p class="important_title01">好</p>
-                        <p class="important_title02">奇心</p>
-                        <img class="important_line" src="./SVG/important_line.svg" alt="">
+                <div class="skill_container01">
+                    <div class="design_left">
+                        <img src="./SVG/skill_デザイン.svg" alt="デザイン">
                     </div>
-                    <p class="important_text">何事にもまず挑戦します。知識や情報収集を欠かさず追い求めます。<br>
-                        デザインに対する興味が強く、スキルアップは特に集中して取り組むことができます。</p>
-                </div>
-                <div class="important_right01">
-                    <p class="important_list">01</p>
-                    <img class="important_decoration" src="./SVG/important_つぶつぶ.svg" alt="">
-                </div>
-            </div>
-            <!-- 課題解決 -->
-            <div class="important_content02">
-                <div class="important_left02">
-                    <p class="important_list">02</p>
-                    <img class="important_decoration" src="./SVG/important_つぶつぶ.svg" alt="">
-                </div>
-                <div class="important_right02">
-                    <div class="important_conteiner">
-                        <img class="important_item" src="./SVG/important_item.svg" alt="">
-                        <p class="important_title01">課</p>
-                        <p class="important_title02">題解決</p>
-                        <img class="important_line" src="./SVG/important_line.svg" alt="">
+                    <div class="design_right">
+                        <img src="./SVG/design.svg" alt="">
+                        <p>ウェブサイト・バナー、チラシ・パンフレットなどのデザインができます。<br>
+                            細かい部分まで妥協せずにやり切ることを意識しています。<br>
+                            余白感・視線の動きを大切にしてデザインしています。<br>
+                            また、見る人にとってわかりやすい情報設計を心がけています。</p>
                     </div>
-                    <p class="important_text">何事にも諦めず挑戦します。あらゆる角度から解決策を見出せるよう努めます。<br>
-                        ゴールを明確にし、お客様と共により意味のあるデザインを完成させていきます。
-                    </p>
                 </div>
-            </div>
-            <!-- 期日管理 -->
-            <div class="important_content01">
-                <div class="important_left01">
-                    <div class="important_conteiner">
-                        <img class="important_item" src="./SVG/important_item.svg" alt="">
-                        <p class="important_title01">期</p>
-                        <p class="important_title02">日管理</p>
-                        <img class="important_line" src="./SVG/important_line.svg" alt="">
+                <div class="skill_container02">
+                    <div class="cording_left">
+                        <img src="./SVG/cording.svg" alt="">
+                        <p>HTML・CSSを用いてデザインを正しく再現することができます。<br>
+                            また、Javascript・jQueryを使用した動きのあるサイトの作成もできます。<br>
+                            レスポンシブにも対応しています。<br>
+                            誰が見ても分かりやすいコーディングを心がけています。<br>
+                            VS Codeを使用してコーディングしています。</p>
                     </div>
-                    <p class="important_text">
-                        デザインが良くても期日に間に合わなければ意味がありません。<br>
-                        期日に間に合ってもデザインが悪くては意味がありません。<br>
-                        お客様の時間はもちろん、自分の時間も大切にし、満足度を高められるよう努めます。
-                    </p>
+                    <div class="cording_right">
+                        <img src="./SVG/skill_コーディング.svg" alt="コーディング">
+                    </div>
                 </div>
-                <div class="important_right01">
-                    <p class="important_list">03</p>
-                    <img class="important_decoration" src="./SVG/important_つぶつぶ.svg" alt="">
+            </section>
+            <img src="./SVG/dotline.svg" alt="">
+            <!-- インポータント -->
+            <section id="important">
+                <div class="title">
+                    <h2>important</h2>
+                    <p>たいせつにしていること</p>
+                    <p>・・・</p>
                 </div>
-            </div>
-            <div class="center_btn">
-                <a href="index.html">戻る</a>
-                <img src="./SVG/btn_item.svg" alt="">
-            </div>
-        </section>
-        <footer>
-            <div>
-                <img src="./SVG/footer.svg" alt="">
-                <div class="footer_wrap">
-                    <nav class="footer_nav">
-                        <ul class="footer_menu">
-                            <li class="footer_item"><a href="./index.html">home</a></li>
-                            <li class="footer_item is-active"><a href="./about.html">about</a></li>
-                            <li class="footer_item"><a href="./works.html">works</a></li>
-                            <li class="footer_item"><a href="./contact.html">contact</a></li>
-                        </ul>
-                    </nav>
-                    <h1 class="footer_logo">
-                        <a href="#home"><img src="./SVG/logo_9.svg"></a>
-                    </h1>
+                <!-- 好奇心 -->
+                <div class="important_content01">
+                    <div class="important_left01">
+                        <div class="important_conteiner">
+                            <img class="important_item" src="./SVG/important_item.svg" alt="">
+                            <p class="important_title01">好</p>
+                            <p class="important_title02">奇心</p>
+                            <img class="important_line" src="./SVG/important_line.svg" alt="">
+                        </div>
+                        <p class="important_text">何事にもまず挑戦します。知識や情報収集を欠かさず追い求めます。<br>
+                            デザインに対する興味が強く、スキルアップは特に集中して取り組むことができます。</p>
+                    </div>
+                    <div class="important_right01">
+                        <p class="important_list">01</p>
+                        <img class="important_decoration" src="./SVG/important_つぶつぶ.svg" alt="">
+                    </div>
                 </div>
-                <p class="footer_outer">© 2025 Ado Desgin</p>
+                <!-- 課題解決 -->
+                <div class="important_content02">
+                    <div class="important_left02">
+                        <p class="important_list">02</p>
+                        <img class="important_decoration" src="./SVG/important_つぶつぶ.svg" alt="">
+                    </div>
+                    <div class="important_right02">
+                        <div class="important_conteiner">
+                            <img class="important_item" src="./SVG/important_item.svg" alt="">
+                            <p class="important_title01">課</p>
+                            <p class="important_title02">題解決</p>
+                            <img class="important_line" src="./SVG/important_line.svg" alt="">
+                        </div>
+                        <p class="important_text">何事にも諦めず挑戦します。あらゆる角度から解決策を見出せるよう努めます。<br>
+                            ゴールを明確にし、お客様と共により意味のあるデザインを完成させていきます。
+                        </p>
+                    </div>
+                </div>
+                <!-- 期日管理 -->
+                <div class="important_content01">
+                    <div class="important_left01">
+                        <div class="important_conteiner">
+                            <img class="important_item" src="./SVG/important_item.svg" alt="">
+                            <p class="important_title01">期</p>
+                            <p class="important_title02">日管理</p>
+                            <img class="important_line" src="./SVG/important_line.svg" alt="">
+                        </div>
+                        <p class="important_text">
+                            デザインが良くても期日に間に合わなければ意味がありません。<br>
+                            期日に間に合ってもデザインが悪くては意味がありません。<br>
+                            お客様の時間はもちろん、自分の時間も大切にし、満足度を高められるよう努めます。
+                        </p>
+                    </div>
+                    <div class="important_right01">
+                        <p class="important_list">03</p>
+                        <img class="important_decoration" src="./SVG/important_つぶつぶ.svg" alt="">
+                    </div>
+                </div>
+                <div class="center_btn">
+                    <a href="index.html">戻る</a>
+                    <img src="./SVG/btn_item.svg" alt="">
+                </div>
+            </section>
+            <!-- パララックス -->
+            <img class="circles01 circle" src="./SVG/all要素3.svg" alt="">
+            <img class="circles02 circle" src="./SVG/all要素2.svg" alt="">
+            <img class="circles03 circle" src="./SVG/all要素5.svg" alt="">
+            <img class="circles04 circle" src="./SVG/all要素1.svg" alt="">
+            <img class="circles05 circle" src="./SVG/all要素4.svg" alt="">
+            <img class="circles06 circle" src="./SVG/all要素6.svg" alt="">
+        </div>
+    </main>
+    <!-- フッター -->
+    <footer>
+        <div>
+            <img src="./SVG/footer.svg" alt="">
+            <div class="footer_wrap">
+                <nav class="footer_nav">
+                    <ul class="footer_menu">
+                        <li class="footer_item"><a href="./index.html">home</a></li>
+                        <li class="footer_item is-active"><a href="./about.html">about</a></li>
+                        <li class="footer_item"><a href="./works.html">works</a></li>
+                        <li class="footer_item"><a href="./contact.html">contact</a></li>
+                    </ul>
+                </nav>
+                <h1 class="footer_logo">
+                    <a href="#home"><img src="./SVG/logo_9.svg"></a>
+                </h1>
             </div>
-        </footer>
-        <script>
-            // ハンバーガーメニュー
-            $(function () {
-                $('.menu_btn').on('click', function () {
-                    $('.menu_btn').toggleClass('open');
-                    $('.menu_nav').fadeToggle();
-                })
+            <p class="footer_outer">© 2025 Ado Desgin</p>
+        </div>
+    </footer>
+    <script>
+        // ハンバーガーメニュー
+        $(function () {
+            $('.menu_btn').on('click', function () {
+                $('.menu_btn').toggleClass('open');
+                $('.menu_nav').fadeToggle();
             })
-        </script>
+        })
+    </script>
+    <!-- パララックス -->
+    <script>
+        // ①thumbnailクラスのついた要素を定数「image」に格納
+        const image = document.getElementsByClassName('circle');
+        // ②simpleParallaxを宣言
+        new simpleParallax(image, {
+            orientation: 'up',
+            scale: 1.5,
+            overflow: true,
+            delay: 2,
+        });
+    </script>
 </body>
 
 </html>

@@ -10,6 +10,7 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
@@ -28,18 +29,7 @@
 <body id="home">
     <!-- ローディング -->
     <div class="loading">
-        <p class="loading_text">
-            <span>l</span>
-            <span>o</span>
-            <span>a</span>
-            <span>d</span>
-            <span>i</span>
-            <span>n</span>
-            <span>g</span>
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
-        </p>
+        <p class="loading_text">Loading...</p>
     </div>
     <!-- ヘッダー -->
     <header class="first_header">
@@ -103,9 +93,9 @@
                     </div>
                 </div>
                 <div class="about_right01">
-                    <div>
+                    <div class="about_wrap">
                         <img class="about_img_00" src="./SVG/about_似顔絵.svg" alt="似顔絵">
-                        <div class="about_wrap">
+                        <div class="about_animation">
                             <img class="about_img_01" src="./SVG/about_1.svg" alt="about_1">
                             <img class="about_img_02" src="./SVG/about_2.svg" alt="about_2">
                             <img class="about_img_03" src="./SVG/about_3.svg" alt="about_3">
@@ -119,177 +109,198 @@
             </div>
 
         </section>
-        <!-- スキル -->
-        <section id="skill">
-            <div class="title">
-                <h2>skill</h2>
-                <p>できること</p>
-                <p>・・・</p>
-            </div>
-            <div class="skill_content">
+        <div class="area">
+            <!-- スキル -->
+            <section id="skill">
+                <div class="title">
+                    <h2>skill</h2>
+                    <p>できること</p>
+                    <p>・・・</p>
+                </div>
+                <div class="skill_content">
 
-                <img class="skill_decoration" src="./SVG/skill.svg" alt="">
-                <div class="skill_left">
-                    <img src="./SVG/skill_デザイン.svg" alt="デザイン">
-                    <table>
-                        <tr>
-                            <td class="skill_item">Illustrator</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>■</span>
-                                <span>●</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="skill_item">Photoshop</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>■</span>
-                                <span>●</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="skill_item">Figma</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>■</span>
-                                <span>○</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                    </table>
+                    <img class="skill_decoration" src="./SVG/skill.svg" alt="">
+                    <div class="skill_left">
+                        <img src="./SVG/skill_デザイン.svg" alt="デザイン">
+                        <table>
+                            <tr>
+                                <td class="skill_item">Illustrator</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>■</span>
+                                    <span>●</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skill_item">Photoshop</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>■</span>
+                                    <span>●</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skill_item">Figma</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>■</span>
+                                    <span>○</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="skill_right">
+                        <img src="./SVG/skill_コーディング.svg" alt="コーディング">
+                        <table>
+                            <tr>
+                                <td class="skill_item">HTML</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>■</span>
+                                    <span>○</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skill_item">CSS</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>■</span>
+                                    <span>○</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skill_item">VSCode</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>■</span>
+                                    <span>○</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skill_item">GitHub</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>■</span>
+                                    <span>○</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skill_item">jQuery</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>□</span>
+                                    <span>○</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skill_item">JavaScript</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>□</span>
+                                    <span>○</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skill_item">Sass</td>
+                                <td class="skill_level">
+                                    <span>●</span>
+                                    <span>◆</span>
+                                    <span>■</span>
+                                    <span>○</span>
+                                    <span>◇</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div class="skill_right">
-                    <img src="./SVG/skill_コーディング.svg" alt="コーディング">
-                    <table>
-                        <tr>
-                            <td class="skill_item">HTML</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>■</span>
-                                <span>○</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="skill_item">CSS</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>■</span>
-                                <span>○</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="skill_item">VSCode</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>■</span>
-                                <span>○</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="skill_item">GitHub</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>■</span>
-                                <span>○</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="skill_item">jQuery</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>□</span>
-                                <span>○</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="skill_item">JavaScript</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>□</span>
-                                <span>○</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="skill_item">Sass</td>
-                            <td class="skill_level">
-                                <span>●</span>
-                                <span>◆</span>
-                                <span>■</span>
-                                <span>○</span>
-                                <span>◇</span>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="center_btn">
+                    <a href="about.html">もっとみる</a>
+                    <img src="./SVG/btn_item.svg" alt="">
                 </div>
-            </div>
-            <div class="center_btn">
-                <a href="about.html">もっとみる</a>
-                <img src="./SVG/btn_item.svg" alt="">
-            </div>
-        </section>
-        <!-- ワークス -->
-        <section id="works">
-            <img src="./SVG/dotline.svg" alt="">
-            <div class="title">
-                <h2>works</h2>
-                <p>つくったもの</p>
-                <p>・・・</p>
-            </div>
-            <img class="works_decoration" src="./SVG/works.svg" alt="">
-            <div>
+            </section>
+            <!-- ワークス -->
+            <section id="works">
+                <img src="./SVG/dotline.svg" alt="">
+                <div class="title">
+                    <h2>works</h2>
+                    <p>つくったもの</p>
+                    <p>・・・</p>
+                </div>
+                <img class="works_decoration" src="./SVG/works.svg" alt="">
                 <div class="works_title">
                     <img src="./SVG/works_title.svg" alt="">
                     <p>ウェブデザイン</p>
                 </div>
                 <div class="web_slider">
-                    <div class="web_slider_item c-bnr bg">
-                        <a href="./lifestylefit.html"><img src="./Works/1x/LIFE STYLE FIT.png" alt=""></a>
-                    </div>
-                    <div class="web_slider_item c-bnr bg">
-                        <a href=""><img src="./Works/1x/DESIGN CAFE.png" alt=""></a>
-                    </div>
-                    <div class="web_slider_item c-bnr bg">
-                        <a href=""><img src="./Works/1x/WORKERS.png" alt=""></a>
-                    </div>
-                    <div class="web_slider_item c-bnr bg">
-                        <a href=""><img src="./Works/1x/dezasutamobile.png" alt=""></a>
-                    </div>
-                    <div class="web_slider_item c-bnr bg">
-                        <a href=""><img src="./Works/1x/TRRRRIP.png" alt=""></a>
-                    </div>
-                    <div class="web_slider_item c-bnr bg">
-                        <a href=""><img src="./Works/1x/luxury_デラックスバーガー.png" alt=""></a>
-                    </div>
-                    <div class="web_slider_item">
-                        <a href=""><img src="./Works/1x/POP_デラックスバーガー.png" alt=""></a>
-                    </div>
+                    <a href="./lifestylefit.html">
+                        <div class="web_slider_item">
+                            <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                        </div>
+                    </a>
+                    <a href="./designcafe.html">
+                        <div class="web_slider_item">
+                            <img src="./Works/1x/DESIGN CAFE.png" alt="">
+                        </div>
+                    </a>
+                    <a href="./workers.html">
+                        <div class="web_slider_item">
+                            <img src="./Works/1x/WORKERS.png" alt="">
+
+                        </div>
+                    </a>
+                    <a href="./dezasutamobile.html">
+                        <div class="web_slider_item">
+                            <img src="./Works/1x/dezasutamobile.png" alt="">
+
+                        </div>
+                    </a>
+                    <a href="./trrrrip.html">
+                        <div class="web_slider_item">
+                            <img src="./Works/1x/TRRRRIP.png" alt="">
+
+                        </div>
+                    </a>
+                    <a href="./luxury burger.html">
+                        <div class="web_slider_item">
+                            <img src="./Works/1x/luxuryburger.png" alt="">
+
+                        </div>
+                    </a>
+                    <a href="./popburger.html">
+                        <div class="web_slider_item">
+                            <img src="./Works/1x/popburger.png" alt="">
+
+                        </div>
+                    </a>
                 </div>
                 <div class="works_title">
                     <img src="./SVG/works_title.svg" alt="">
                     <p class="works_content">グラフィックデザイン</p>
                 </div>
                 <div class="graphic_slider" dir="rtl">
-                    <div class="graphic_slider_item">
-                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
-                    </div>
+                    <a href="./openhouse.html">
+                        <div class="graphic_slider_item">
+                            <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                        </div>
+                    </a>
                     <div class="graphic_slider_item">
                         <img src="./Works/1x/OPENHOUSE.jpg" alt="">
                     </div>
@@ -314,23 +325,30 @@
                 <img class="works_dotline" src="./SVG/dotline.svg" alt="">
 
                 <div class="scrolldown2"><span>Scroll</span></div>
-        </section>
-        <!-- コンタクト -->
-        <section id="contact">
-            <div class="title">
-                <h2>contact</h2>
-                <p>お問合せ</p>
-                <p>・・・</p>
-            </div>
-            <p class="contact_text">最後までご覧いただきましてありがとうございます。<br>
-                ご依頼やご相談等お気軽にお問い合わせください。</p>
-            <div class="center_btn">
-                <a href="contact.html">お問い合わせはこちら</a>
-                <img src="./SVG/btn_item.svg" alt="">
-            </div>
-            <img class="contact_decoration" src="./SVG/contact.svg" alt="">
-        </section>
-
+            </section>
+            <!-- コンタクト -->
+            <section id="contact">
+                <div class="title">
+                    <h2>contact</h2>
+                    <p>お問合せ</p>
+                    <p>・・・</p>
+                </div>
+                <p class="contact_text">最後までご覧いただきましてありがとうございます。<br>
+                    ご依頼やご相談等お気軽にお問い合わせください。</p>
+                <div class="center_btn">
+                    <a href="contact.html">お問い合わせはこちら</a>
+                    <img src="./SVG/btn_item.svg" alt="">
+                </div>
+                <img class="contact_decoration" src="./SVG/contact.svg" alt="">
+            </section>
+            <!-- パララックス -->
+            <img class="circles01 circle" src="./SVG/all要素3.svg" alt="">
+            <img class="circles02 circle" src="./SVG/all要素2.svg" alt="">
+            <img class="circles03 circle" src="./SVG/all要素5.svg" alt="">
+            <img class="circles04 circle" src="./SVG/all要素1.svg" alt="">
+            <img class="circles05 circle" src="./SVG/all要素4.svg" alt="">
+            <img class="circles06 circle" src="./SVG/all要素6.svg" alt="">
+        </div>
     </main>
     <!-- フッター -->
     <footer>
@@ -355,15 +373,6 @@
             <a href="#home">Page Top</a>
         </div>
     </footer>
-    <!-- パララックス -->
-    <div class="area">
-        <img class="circles01" src="./SVG/all要素3.svg" alt="">
-        <img class="circles02" src="./SVG/all要素2.svg" alt="">
-        <img class="circles03" src="./SVG/all要素5.svg" alt="">
-        <img class="circles04" src="./SVG/all要素1.svg" alt="">
-        <img class="circles05" src="./SVG/all要素4.svg" alt="">
-        <img class="circles06" src="./SVG/about_6.svg" alt="">
-    </div>
     <script>
         // ローディング
         $(function () {
@@ -373,7 +382,16 @@
             }
             // テキスト表示
             function show_txt() {
-                $('.loading .loading_text span').fadeIn(400);
+                $('.loading .loading_text').fadeIn(400);
+                let loading = document.querySelector(".loading_text");
+                let letters = loading.textContent.split("");
+                loading.textContent = "";
+                letters.forEach((letter, i) => {
+                    let span = document.createElement("span");
+                    span.textContent = letter;
+                    span.style.animationDelay = `${i / 10}s`;
+                    loading.append(span);
+                });
             }
             // テキスト非表示
             function hide_txt() {
@@ -385,30 +403,39 @@
                 // 処理①
                 setTimeout(function () {
                     show_txt();
-                }, 1000)
+                }, 0)
                 // 処理②
-                setTimeout(function () {
-                    hide_txt();
-                }, 3500)
+                // setTimeout(function () {
+                //     hide_txt();
+                // }, 3500)
                 // 処理③
                 setTimeout(function () {
                     end_loader();
-                }, 4500)
+                }, 3000)
             })
         })
-        // ローディング
-        // window.onload = function () {
-        //     const spinner = document.getElementById("loading");
-        //     spinner.classList.add("loaded");
-        //     let loading = document.querySelector(".loading");
-        //     let letters = loading.textContent.split("");
-        //     loading.textContent = "";
-        //     letters.forEach((letter, i) => {
-        //         let span = document.createElement("span");
-        //         span.textContent = letter;
-        //         span.style.animationDelay = `${i / 10}s`;
-        //         loading.append(span);
-        //     });
+        $(function () {
+            var webStorage = function () {
+                if (sessionStorage.getItem('access')) {
+                    /*
+                      2回目以降アクセス時の処理
+                    */
+                    $(".loading").addClass('is-active');
+                } else {
+                    /*
+                      初回アクセス時の処理
+                    */
+                    sessionStorage.setItem('access', 'true'); // sessionStorageにデータを保存
+                    $(".loading-animation").addClass('is-active'); // loadingアニメーションを表示
+                    setTimeout(function () {
+                        // ローディングを数秒後に非表示にする
+                        $(".loading").addClass('is-active');
+                        $(".loading-animation").removeClass('is-active');
+                    }, 3000); // ローディングを表示する時間
+                }
+            }
+            webStorage();
+        });
         // ハンバーガーメニュー
         $(function () {
             $('.menu_btn').on('click', function () {
@@ -417,12 +444,18 @@
             })
         })
         // ヘッダー
-        $(window).scroll(function () {           /* スクロールされた時 */
-            var pos = $('main').offset();          /* mvを過ぎたmainタグの高さを取得して変数[pos]に格納 */
-            if ($(this).scrollTop() > pos.top) {   /* 変数[pos]より、スクロールされていたら */
-                $('.is-fixed').addClass('active');                /* ヘッダーをふわっと表示 */
-            } else {                               /* それ以外の場合 */
-                $('.is-fixed').removeClass('active');               /* ヘッダーをふわっと非表示 */
+        $(window).scroll(function () {
+            /* スクロールされた時 */
+            var pos = $('main').offset();
+            /* mvを過ぎたmainタグの高さを取得して変数[pos]に格納 */
+            if ($(this).scrollTop() > pos.top) {
+                /* 変数[pos]より、スクロールされていたら */
+                $('.is-fixed').addClass('active');
+                /* ヘッダーをふわっと表示 */
+            } else {
+                /* それ以外の場合 */
+                $('.is-fixed').removeClass('active');
+                /* ヘッダーをふわっと非表示 */
             }
         });
         // ウェブスライダー
@@ -452,7 +485,7 @@
                         breakpoint: 767,
                         settings: {
                             slidesToShow: 1,
-                            autoplaySpeed: 3000,
+                            autoplay: false,
                             speed: 300,
                             arrows: true,
                             swipe: true,
@@ -480,7 +513,7 @@
                         breakpoint: 767,
                         settings: {
                             slidesToShow: 1,
-                            autoplaySpeed: 3000,
+                            autoplay: false,
                             speed: 300,
                             arrows: true,
                             swipe: true,
@@ -524,24 +557,14 @@
     <!-- パララックス -->
     <script>
         // ①thumbnailクラスのついた要素を定数「image」に格納
-        const image = document.getElementsByClassName('area img');
+        const image = document.getElementsByClassName('circle');
         // ②simpleParallaxを宣言
-        new simpleParallax(image);
-
-        // const image = document.getElementsByClassName('circles02');
-        // new simpleParallax(image);
-
-        // const image = document.getElementsByClassName('circles03');
-        // new simpleParallax(image);
-
-        // const image = document.getElementsByClassName('circles04');
-        // new simpleParallax(image);
-
-        // const image = document.getElementsByClassName('circles05');
-        // new simpleParallax(image);
-
-        // const image = document.getElementsByClassName('circles06');
-        // new simpleParallax(image);
+        new simpleParallax(image, {
+            orientation: 'up',
+            scale: 1.5,
+            overflow: true,
+            delay: 2,
+        });
     </script>
 </body>
 

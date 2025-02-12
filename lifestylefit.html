@@ -7,7 +7,9 @@
     <title>LIFE STYLE FIT</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -44,49 +46,59 @@
         </div>
     </header>
     <main>
-        <section id="works">
-            <div class="title">
-                <h2>works</h2>
-                <p>つくったもの</p>
-                <p>・・・</p>
-            </div>
-            <div class="works_detail">
-                <div class="works_left">
-                    <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
-                    <div class="open_btn">
-                        <p>PC版</p>
-                        <!-- <img src="./SVG/mordal_before.svg" alt=""> -->
+        <div class="area">
+            <section id="works">
+                <div class="title">
+                    <h2>works</h2>
+                    <p>つくったもの</p>
+                    <p>・・・</p>
+                </div>
+                <div class="works_detail">
+                    <div class="works_left">
+                        <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                        <div class="open_btn_01">
+                            <p>PC版</p>
+                            <!-- <img src="./SVG/mordal_before.svg" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="modal_content">
+                        <span class="close_btn"></span>
+                        <div class="modal_img">
+                            <img src="./Works/1x/pc_modal_LIFE STYLE FIT.jpg" alt="PC版">
+                        </div>
+                    </div>
+
+                    <div class="works_right">
+                        <p class="dot_line">LIFE STYLE FIT</p>
+
+                        <p>期間 2週間</p>
+                        <p>担当 デザイン（架空LPデザイン）</p>
+                        <p class="dot_line">ツール Illustrator</p>
+
+                        <p>概要<br>
+                            10周年を機会にWEBサイトをリニューアル<br>
+                            認知向上・予約獲得・SNSフォロワーUPが目的</p>
+                        <p>ポイント<br>
+                            お店の雰囲気・人が感じられるサイトの作成を意識しました<br>
+                            背景にアイボリーを使用し、ナチュラルで清潔感を感じる雰囲気にしました<br>
+                            TOPに予約ボタンを配置し、誘導しました</p>
+                        <div class="works_btn">
+                            <a href="works.html">戻る</a>
+                            <img src="./SVG/btn_item.svg" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="modal_content">
-                    <span class="close_btn"></span>
-                    <div class="modal_img">
-                        <img src="./Works/1x/pc_modal_LIFE STYLE FIT.jpg" alt="PC版">
-                    </div>
-                </div>
-
-                <div class="works_right">
-                    <p class="dot_line">LIFE STYLE FIT</p>
-
-                    <p>期間 2週間</p>
-                    <p>担当 デザイン（架空LPデザイン）</p>
-                    <p class="dot_line">ツール Illustrator</p>
-
-                    <p>概要<br>
-                        10周年を機会にWEBサイトをリニューアル<br>
-                        認知向上・予約獲得・SNSフォロワーUPが目的</p>
-                    <p>ポイント<br>
-                        お店の雰囲気・人が感じられるサイトの作成を意識しました<br>
-                        背景にアイボリーを使用し、ナチュラルで清潔感を感じる雰囲気にしました<br>
-                        TOPに予約ボタンを配置し、誘導しました</p>
-                    <div class="works_btn">
-                        <a href="works.html">戻る</a>
-                        <img src="./SVG/btn_item.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+            <!-- パララックス -->
+            <img class="circles01 circle" src="./SVG/all要素3.svg" alt="">
+            <img class="circles02 circle" src="./SVG/all要素2.svg" alt="">
+            <img class="circles03 circle" src="./SVG/all要素5.svg" alt="">
+            <img class="circles04 circle" src="./SVG/all要素1.svg" alt="">
+            <img class="circles05 circle" src="./SVG/all要素4.svg" alt="">
+            <img class="circles06 circle" src="./SVG/all要素6.svg" alt="">
+        </div>
     </main>
+    <!-- フッター -->
     <footer>
         <div>
             <img src="./SVG/footer.svg" alt="">
@@ -116,14 +128,30 @@
         })
         // モーダルウインドウ
         $(function () {
-            $('.open_btn').on('click', function () {
-                $('.open_btn').toggleClass('open');
+            $('.open_btn_01').on('click', function () {
+                $('.open_btn_01').toggleClass('open');
+                $('.modal_content').fadeToggle();
+            })
+            $('.open_btn_02').on('click', function () {
+                $('.open_btn_02').toggleClass('open');
                 $('.modal_content').fadeToggle();
             })
             $('.close_btn').on('click', function () {
                 $('.modal_content').fadeOut();
             })
         })
+    </script>
+    <!-- パララックス -->
+    <script>
+        // ①thumbnailクラスのついた要素を定数「image」に格納
+        const image = document.getElementsByClassName('circle');
+        // ②simpleParallaxを宣言
+        new simpleParallax(image, {
+            orientation: 'up',
+            scale: 1.5,
+            overflow: true,
+            delay: 2,
+        });
     </script>
 </body>
 

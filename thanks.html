@@ -7,7 +7,9 @@
     <title>thanks</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -44,24 +46,35 @@
         </div>
     </header>
     <main>
-        <!-- コンタクト -->
-        <section id="contact">
-            <div class="title">
-                <h2>contact</h2>
-                <p>お問合せ</p>
-                <p>・・・</p>
-            </div>
-            <div class="thanks_contents">
-                <img class="thanks_img02" src="./SVG/first view_ハート.svg" alt="">
-                <p class="thanks01">thank you</p>
-                <p class="thanks02">最後までご覧いただきましてありがとうございます。</p>
-                <img class="thanks_img01" src="./SVG/thanks_イラスト.svg" alt="">
-            </div>
-            <div class="center_btn">
-                <a href="index.html">ホームに戻る</a>
-                <img src="./SVG/btn_item.svg" alt="">
-            </div>
+        <div class="area">
+            <!-- コンタクト -->
+            <section id="contact">
+                <div class="title">
+                    <h2>contact</h2>
+                    <p>お問合せ</p>
+                    <p>・・・</p>
+                </div>
+                <div class="thanks_contents">
+                    <img class="thanks_img02" src="./SVG/first view_ハート.svg" alt="">
+                    <p class="thanks01">thank you</p>
+                    <p class="thanks02">最後までご覧いただきましてありがとうございます。</p>
+                    <img class="thanks_img01" src="./SVG/thanks_イラスト.svg" alt="">
+                </div>
+                <div class="center_btn">
+                    <a href="index.html">ホームに戻る</a>
+                    <img src="./SVG/btn_item.svg" alt="">
+                </div>
+            </section>
+            <!-- パララックス -->
+            <img class="circles01 circle" src="./SVG/all要素3.svg" alt="">
+            <img class="circles02 circle" src="./SVG/all要素2.svg" alt="">
+            <img class="circles03 circle" src="./SVG/all要素5.svg" alt="">
+            <img class="circles04 circle" src="./SVG/all要素1.svg" alt="">
+            <img class="circles05 circle" src="./SVG/all要素4.svg" alt="">
+            <img class="circles06 circle" src="./SVG/all要素6.svg" alt="">
+        </div>
     </main>
+    <!-- フッター -->
     <footer>
         <div>
             <img src="./SVG/footer.svg" alt="">
@@ -89,6 +102,18 @@
                 $('.menu_nav').fadeToggle();
             })
         })
+    </script>
+    <!-- パララックス -->
+    <script>
+        // ①thumbnailクラスのついた要素を定数「image」に格納
+        const image = document.getElementsByClassName('circle');
+        // ②simpleParallaxを宣言
+        new simpleParallax(image, {
+            orientation: 'up',
+            scale: 1.5,
+            overflow: true,
+            delay: 2,
+        });
     </script>
 </body>
 

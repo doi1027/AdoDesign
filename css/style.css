@@ -31,16 +31,16 @@
   display: inline-block; /*横並びにしつつアニメーションを適用*/
   animation: 0.5s bound-anim ease-in infinite alternate;
 }
-/*===========
-inview
-===========*/
-.fadeIn {
+/* フェードイン */
+/* .fadeIn_left {
   opacity: 0;
+  transform: translate(-50%, 0);
   transition: 2s;
 }
-.fadeIn.is-show {
+.fadeIn_left.is-show {
+  transform: translate(0, 0);
   opacity: 1;
-}
+} */
 /* ヘッダー */
 .first_header {
   height: 100vh;

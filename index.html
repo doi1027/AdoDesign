@@ -42,7 +42,7 @@
             <img class="first_view02" src="./SVG/first view_ハート.svg">
             <img class="first_view03" src="./SVG/first view_つぶつぶ.svg">
         </div>
-        <div class="header_container section">
+        <div class="header_container">
 
             <div class="header_box01 inview_re fadeIn_left">
                 <p>日々流れる時間を有意義に</p>
@@ -455,15 +455,15 @@
             webStorage();
         });
         // フェードイン
-        $(function () {
-            $(".inview_re").on("inview", function (event, isInView) {
-                if (isInView) {
-                    $(this).stop().addClass("is-show");
-                } else {
-                    $(this).stop().removeClass("is-show");
-                }
-            });
-        });
+        // $(function () {
+        //     $(".inview_re").on("inview", function (event, isInView) {
+        //         if (isInView) {
+        //             $(this).stop().addClass("is-show");
+        //         } else {
+        //             $(this).stop().removeClass("is-show");
+        //         }
+        //     });
+        // });
 
         // ハンバーガーメニュー
         $(function () {

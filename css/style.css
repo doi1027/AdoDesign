@@ -708,7 +708,7 @@
   z-index: 100;
 }
 .important_decoration {
-  width: 46%;
+  width: 100%;
 }
 .important_content02 {
   display: flex;
@@ -1610,6 +1610,16 @@ footer > div > img {
     padding-right: 200%;
   }
   /* ワークス */
+  .works_title {
+    top: 25px;
+  }
+  .works_title img {
+    left: 7%;
+  }
+  .works_title p {
+    font-size: 16px;
+    left: 12%;
+  }
   .search {
     padding-bottom: 55px;
   }
@@ -1636,9 +1646,14 @@ footer > div > img {
     width: 100%;
     padding: 0 0 32px;
   }
-  .works_left img,
   .works_right p {
     width: 84%;
+  }
+  .pc_mockup {
+    width: 82%;
+  }
+  .sp_mockup {
+    width: 30%;
   }
   .works_right {
     width: 100%;
@@ -1723,7 +1738,7 @@ footer > div > img {
     padding-top: 62px;
   }
   /* スライダー */
-  .slick-prev,
+  /* .slick-prev,
   .graphic_slider .slick-next {
     left: 25px;
     z-index: 100;
@@ -1731,7 +1746,7 @@ footer > div > img {
   .slick-next,
   .graphic_slider .slick-prev {
     right: 35px;
-  }
+  } */
   .web_slider,
   .graphic_slider {
     max-width: 500px;

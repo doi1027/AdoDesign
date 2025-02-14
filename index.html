@@ -14,8 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.2/dist/simpleParallax.min.js"></script>
-    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-
+    <script type="text/javascript" src="./jquery.inview.min.js"></script>
     <script>
         (function (d) {
             var config = {
@@ -447,7 +446,7 @@
                         // ローディングを数秒後に非表示にする
                         $(".loading").addClass('is-active');
                         $(".loading-animation").removeClass('is-active');
-                    }, 0); // ローディングを表示する時間
+                    }, 1000); // ローディングを表示する時間
                 }
             }
             webStorage();

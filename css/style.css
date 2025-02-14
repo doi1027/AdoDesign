@@ -146,7 +146,7 @@
   z-index: 100;
   top: -20px;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100px;
   animation: anime 0.7s forwards;
 }
@@ -411,7 +411,7 @@
   padding-bottom: 15px;
 }
 .about_right01 {
-  position: relative;
+  /* position: relative; */
   width: 34%;
   padding: 0 7% 0 5%;
 }
@@ -430,7 +430,8 @@
   z-index: 50;
 }
 .about_img_07 {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   height: 243px;
   left: 50%;
   bottom: 25px;
@@ -1409,6 +1410,27 @@ footer > div > img {
   right: -20px;
 }
 @media screen and (max-width: 1100px) {
+  .header_container {
+    bottom: 0;
+  }
+  .header_box01 {
+    width: 100%;
+    height: 50px;
+    border-radius: 0 5px 5px 0;
+    margin: -25% 0 8px;
+  }
+  .header_box02 {
+    width: 110%;
+    height: 50px;
+    border-radius: 0 5px 5px 0;
+  }
+  .header_box01 p,
+  .header_box02 p {
+    font-size: 35px;
+    letter-spacing: 0;
+    padding-left: 25px;
+    padding-top: 5px;
+  }
   .list {
     display: block;
     max-width: 84%;
@@ -1443,6 +1465,17 @@ footer > div > img {
   .pc_btn {
     display: none;
   }
+  .loading_text {
+    font-size: 50px;
+  }
+  .first_view {
+    position: relative;
+    max-width: 850px;
+    width: 80%;
+    height: 500px;
+    z-index: 1;
+    margin-left: auto;
+  }
   .first_view01 {
     display: none;
   }
@@ -1452,22 +1485,16 @@ footer > div > img {
     padding-top: 20px;
   }
   .first_view02 {
-    position: absolute;
-    top: 32%;
+    top: 46%;
     right: 10%;
-    width: 45%;
   }
   .first_view03 {
-    position: absolute;
-    top: 30%;
     left: -7px;
-    width: 17%;
   }
   .header_container {
     bottom: 20%;
   }
   .header_box01 {
-    text-align: start;
     width: 100%;
     height: 28px;
     border-radius: 0 5px 5px 0;
@@ -1507,7 +1534,7 @@ footer > div > img {
   }
   .about_left02 {
     width: 84%;
-    padding: 25% 0 0 0;
+    padding: 10% 0 0 0;
   }
   .about_right01 {
     position: relative;
@@ -1516,7 +1543,12 @@ footer > div > img {
   }
   .about_right02 {
     width: 50%;
-    padding: 0 0 50% 0;
+    padding: 0 0 40% 0;
+  }
+  .about_right02 p {
+    font-size: 16px;
+    top: -10px;
+    left: 15%;
   }
   .about_img_00 {
     top: 30%;
@@ -1543,13 +1575,16 @@ footer > div > img {
   /* アバウト_スキル */
   .skill_container01,
   .skill_container02 {
-    margin: 0 auto;
     width: 92%;
     height: 370px;
     border-radius: 20px;
   }
   .skill_container01 {
     margin: 95px auto 55px;
+    justify-content: center;
+  }
+  .skill_container02 {
+    margin-right: auto;
     justify-content: center;
   }
   .design_left,
@@ -1573,7 +1608,9 @@ footer > div > img {
     width: 182px;
   }
   .cording_left p {
+    width: 315px;
     font-size: 14px;
+    padding-right: 0;
   }
   /* インポータント */
   .important_content01,
@@ -1582,7 +1619,7 @@ footer > div > img {
     padding-top: 50px;
   }
   .important_line {
-    width: 84%;
+    width: 85%;
   }
   .important_text {
     width: 84%;
@@ -1594,12 +1631,12 @@ footer > div > img {
     position: absolute;
     top: -20px;
     right: 0;
+    padding-right: 10%;
   }
   .important_decoration {
     width: 100%;
     bottom: -15px;
     position: absolute;
-    padding-right: 200%;
   }
   .important_content02 {
     flex-direction: column;
@@ -1607,7 +1644,6 @@ footer > div > img {
   }
   .important_list {
     font-size: 125px;
-    padding-right: 200%;
   }
   /* ワークス */
   .works_title {

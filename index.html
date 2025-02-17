@@ -265,71 +265,53 @@
                     <p>ウェブデザイン</p>
                 </div>
                 <div class="web_slider">
-                    <a href="./lifestylefit.html">
-                        <div class="web_slider_item">
-                            <img src="./Works/1x/LIFE STYLE FIT.png" alt="">
-                        </div>
-                    </a>
-                    <a href="./designcafe.html">
-                        <div class="web_slider_item">
-                            <img src="./Works/1x/DESIGN CAFE.png" alt="">
-                        </div>
-                    </a>
-                    <a href="./workers.html">
-                        <div class="web_slider_item">
-                            <img src="./Works/1x/WORKERS.png" alt="">
+                    <div class="web_slider_item">
+                        <a href="./lifestylefit.html"><img src="./Works/1x/LIFE STYLE FIT.png" alt=""></a>
+                    </div>
+                    <div class="web_slider_item">
+                        <a href="./designcafe.html"></a><img src="./Works/1x/DESIGN CAFE.png" alt="">
+                        </a>
+                    </div>
+                    <div class="web_slider_item">
+                        <a href="./workers.html"><img src="./Works/1x/WORKERS.png" alt=""></a>
+                    </div>
 
-                        </div>
-                    </a>
-                    <a href="./dezasutamobile.html">
-                        <div class="web_slider_item">
-                            <img src="./Works/1x/dezasutamobile.png" alt="">
-
-                        </div>
-                    </a>
-                    <a href="./trrrrip.html">
-                        <div class="web_slider_item">
-                            <img src="./Works/1x/TRRRRIP.png" alt="">
-
-                        </div>
-                    </a>
-                    <a href="./luxury burger.html">
-                        <div class="web_slider_item">
-                            <img src="./Works/1x/luxuryburger.png" alt="">
-
-                        </div>
-                    </a>
-                    <a href="./popburger.html">
-                        <div class="web_slider_item">
-                            <img src="./Works/1x/popburger.png" alt="">
-
-                        </div>
-                    </a>
+                    <div class="web_slider_item">
+                        <a href="./dezasutamobile.html"><img src="./Works/1x/dezasutamobile.png" alt=""></a>
+                    </div>
+                    <div class="web_slider_item">
+                        <a href="./trrrrip.html"><img src="./Works/1x/TRRRRIP.png" alt=""></a>
+                    </div>
+                    <div class="web_slider_item">
+                        <a href="./luxury burger.html"><img src="./Works/1x/luxuryburger.png" alt=""></a>
+                    </div>
+                    <div class="web_slider_item">
+                        <a href="./popburger.html"><img src="./Works/1x/popburger.png" alt=""></a>
+                    </div>
                 </div>
                 <div class="works_title">
                     <img src="./SVG/works_title.svg" alt="">
                     <p class="works_content">グラフィックデザイン</p>
                 </div>
                 <div class="graphic_slider" dir="rtl">
-                    <a href="./openhouse.html">
-                        <div class="graphic_slider_item">
-                            <img src="./Works/1x/OPENHOUSE.jpg" alt="">
-                        </div>
-                    </a>
+
                     <div class="graphic_slider_item">
-                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                        <a href="./openhouse.html"><img src="./Works/1x/OPENHOUSE.jpg" alt=""></a>
                     </div>
                     <div class="graphic_slider_item">
-                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                        <a href="./openhouse.html"><img src="./Works/1x/OPENHOUSE.jpg" alt=""></a>
                     </div>
                     <div class="graphic_slider_item">
-                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                        <a href="./openhouse.html"><img src="./Works/1x/OPENHOUSE.jpg" alt=""></a>
                     </div>
                     <div class="graphic_slider_item">
-                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                        <a href="./openhouse.html"><img src="./Works/1x/OPENHOUSE.jpg" alt=""></a>
                     </div>
                     <div class="graphic_slider_item">
-                        <img src="./Works/1x/OPENHOUSE.jpg" alt="">
+                        <a href="./openhouse.html"><img src="./Works/1x/OPENHOUSE.jpg" alt=""></a>
+                    </div>
+                    <div class="graphic_slider_item">
+                        <a href="./openhouse.html"><img src="./Works/1x/OPENHOUSE.jpg" alt=""></a>
                     </div>
                 </div>
 
@@ -410,9 +392,8 @@
             };
             // テキスト非表示
             function hide_txt() {
-                $('.loading .loading_text span').fadeOut(400);
+                $('.loading .loading_text').fadeOut(400);
             }
-
             // タイマー処理
             $(window).on('load', function () {
                 // 処理①
@@ -428,8 +409,6 @@
                     end_loader();
                 }, 3000)
             });
-        });
-        $(function () {
             var webStorage = function () {
                 if (sessionStorage.getItem('access')) {
                     /*
@@ -441,12 +420,7 @@
                       初回アクセス時の処理
                     */
                     sessionStorage.setItem('access', 'true'); // sessionStorageにデータを保存
-                    $(".loading-animation").addClass('is-active'); // loadingアニメーションを表示
-                    setTimeout(function () {
-                        // ローディングを数秒後に非表示にする
-                        $(".loading").addClass('is-active');
-                        $(".loading-animation").removeClass('is-active');
-                    }, 1000); // ローディングを表示する時間
+                    $(".loading-text").addClass('is-active'); // loadingアニメーションを表示
                 }
             }
             webStorage();
@@ -548,6 +522,70 @@
                 ]
             });
         });
+        // ウェブスライダー
+        // $(function () {
+        //     $(".web_slider").slick({
+        //         // 自動再生オン
+        //         autoplay: true,
+        //         // 画像切り替え間隔０秒
+        //         autoplaySpeed: 0,
+        //         // スライド速度５秒
+        //         speed: 5000,
+        //         // 画像切り替えの動き 一定速度
+        //         cssEase: 'linear',
+        //         // 表示画像枚数 ３枚
+        //         slidesToShow: 3,
+        //         // スワイプ不可
+        //         swipe: false,
+        //         // フォーカス当てた時の一時停止不可
+        //         pauseOnFocus: false,
+        //         // ホバーした時の一時停止不可
+        //         pauseOnHover: false,
+        //         // 矢印なしに
+        //         arrows: false,
+        //         useTransform: false,
+        //         responsive: [
+        //             {
+        //                 breakpoint: 767,
+        //                 settings: {
+        //                     slidesToShow: 1,
+        //                     autoplay: false,
+        //                     speed: 300,
+        //                     arrows: true,
+        //                     swipe: true,
+        //                 }
+        //             }
+        //         ]
+        //     });
+        // });
+        // グラフィックスライダー
+        // $(function () {
+        //     $(".graphic_slider").slick({
+        //         autoplay: true,
+        //         autoplaySpeed: 0,
+        //         speed: 5000,
+        //         cssEase: 'linear',
+        //         slidesToShow: 3,
+        //         swipe: false,
+        //         pauseOnFocus: false,
+        //         pauseOnHover: false,
+        //         arrows: false,
+        //         rtl: true,
+        //         useTransform: false,
+        //         responsive: [
+        //             {
+        //                 breakpoint: 767,
+        //                 settings: {
+        //                     slidesToShow: 1,
+        //                     autoplay: false,
+        //                     speed: 300,
+        //                     arrows: true,
+        //                     swipe: true,
+        //                 }
+        //             }
+        //         ]
+        //     });
+        // });
         // ページトップ
         $(function () {
             // 変数にクラスを入れる

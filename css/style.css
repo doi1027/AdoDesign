@@ -1235,28 +1235,36 @@ textarea {
 .thanks_contents {
   text-align: center;
   text-align: center;
-  padding: 30px 0 100px;
+  padding: 25% 0 15%;
+  position: relative;
 }
 .thanks01 {
   font-family: ta-oonishi, sans-serif;
   font-size: 100px;
-  padding-bottom: 60px;
+  position: absolute;
+  z-index: 50;
+  top: 15%;
+  left: 25%;
 }
 .thanks02 {
   font-size: 16px;
   letter-spacing: 0.05em;
+  position: absolute;
+  z-index: 50;
+  left: 26%;
+  bottom: 50%;
 }
 .thanks_img01 {
   width: 196px;
   position: absolute;
-  bottom: 85px;
-  left: 30%;
+  bottom: 17%;
+  left: 25%;
 }
 .thanks_img02 {
   width: 417px;
   position: absolute;
-  bottom: 100px;
   right: 12%;
+  top: -5%;
 }
 /* フッター */
 footer {
@@ -1415,6 +1423,9 @@ footer > div > img {
   top: 75%;
   right: -55px;
 }
+.sp_br {
+  display: none;
+}
 @media screen and (max-width: 1100px) {
   .header_container {
     bottom: 0;
@@ -1462,11 +1473,25 @@ footer > div > img {
   .close_btn {
     top: 9%;
   }
+  /* サンクスページ */
+  .thanks01 {
+    bottom: 30%;
+  }
+  .thanks02 {
+    bottom: 48%;
+  }
+  .thanks_img01 {
+    bottom: 8%;
+  }
+  .thanks_img02 {
+    top: -10%;
+  }
 }
 @media screen and (max-width: 767px) {
-  br {
-    display: none;
+  .sp_br {
+    display: block;
   }
+  .pc_br,
   .pc_nav,
   .pc_btn {
     display: none;
@@ -1488,11 +1513,12 @@ footer > div > img {
   .sp_first_view01 {
     display: block;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 30%;
+    position: relative;
   }
   .first_view02 {
-    top: 46%;
-    right: 10%;
+    top: 30%;
+    right: 13%;
   }
   .first_view03 {
     left: -7px;
@@ -1504,7 +1530,7 @@ footer > div > img {
     width: 100%;
     height: 28px;
     border-radius: 0 5px 5px 0;
-    margin: -25% 0 8px;
+    margin: -45% 0 7%;
   }
   .header_box02 {
     width: 110%;
@@ -1517,6 +1543,10 @@ footer > div > img {
     letter-spacing: 0;
     padding-left: 25px;
     padding-top: 5px;
+  }
+  .scrolldown1 {
+    bottom: 13%;
+    right: 4%;
   }
   /* アバウト */
   .about_content {
@@ -1777,20 +1807,24 @@ footer > div > img {
     font-size: 14px;
   }
   /* サンクスページ */
+  .thanks_contents {
+    padding: 30% 0 45%;
+  }
   .thanks01 {
     font-size: 46px;
   }
   .thanks02 {
     font-size: 14px;
+    left: 33%;
   }
   .thanks_img01 {
-    width: 65%;
-    padding-bottom: 43px;
+    width: 50%;
+    bottom: -2%;
   }
   .thanks_img02 {
     width: 31%;
-    top: 50%;
-    right: 10%;
+    top: 3%;
+    right: 18%;
   }
   /* フッター */
 

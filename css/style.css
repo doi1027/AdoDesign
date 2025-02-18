@@ -1386,34 +1386,34 @@ footer > div > img {
   z-index: -1;
 }
 .circles01 {
-  max-width: 30%;
+  max-width: 45%;
   top: -5%;
   left: -25px;
 }
 .circles02 {
-  max-width: 30%;
+  max-width: 45%;
   top: 15%;
   right: -20px;
 }
 .circles03 {
-  max-width: 30%;
-  top: 35%;
+  max-width: 45%;
+  top: 30%;
   left: -20px;
 }
 .circles04 {
-  max-width: 30%;
-  top: 55%;
+  max-width: 45%;
+  top: 45%;
   right: -25px;
 }
 .circles05 {
-  max-width: 30%;
-  top: 75%;
+  max-width: 45%;
+  top: 60%;
   left: -25px;
 }
 .circles06 {
-  max-width: 32%;
-  top: 95%;
-  right: -20px;
+  max-width: 45%;
+  top: 75%;
+  right: -55px;
 }
 @media screen and (max-width: 1100px) {
   .header_container {

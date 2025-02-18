@@ -429,7 +429,7 @@
 .about_right02 {
   position: relative;
   width: 33%;
-  padding: 110px 10% 0 2%;
+  padding: 25% 10% 0 2%;
 }
 .about_right02 p {
   position: absolute;
@@ -441,17 +441,18 @@
   z-index: 50;
 }
 .about_img_07 {
-  /* position: absolute; */
   position: relative;
   height: 243px;
-  left: 50%;
+  left: 60%;
   bottom: 25px;
   transform: translateX(-50%);
 }
-.about_animation {
+.about_animation01,
+.about_animation02 {
   animation: floating-x 7.2s ease-in-out infinite alternate-reverse;
 }
-.about_animation img {
+.about_animation01 img,
+.about_animation02 img {
   animation: floating-y 1.8s ease-in-out infinite alternate-reverse;
 }
 @keyframes floating-x {
@@ -477,10 +478,15 @@
   transform: translateX(-50%);
   padding-top: 15%;
 }
-.about_animation {
+.about_animation01 {
   position: absolute;
   top: 35%;
   width: 25%;
+}
+.about_animation02 {
+  position: absolute;
+  top: 35%;
+  width: 75%;
 }
 .about_img_01 {
   position: absolute;
@@ -769,13 +775,15 @@
   position: absolute;
   left: 180px;
 }
-.web_slider {
+.web_slider,
+.graphic_slider {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   margin: 75px auto;
 }
-.web_slider_item {
+.web_slider_item,
+.graphic_slider_item {
   background-color: #f3ecd8; /* 背景色指定 */
   max-width: 350px;
   height: 250px;
@@ -784,30 +792,11 @@
   margin-left: 13px;
   text-align: center;
 }
-.web_slider_item img {
-  height: 80%;
-  width: auto;
-  margin: 0 auto;
-  padding-top: 7%;
-}
-.graphic_slider {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  margin: 75px auto;
-}
-.graphic_slider_item {
-  background-color: #f3ecd8; /* 背景色指定 */
-  max-width: 350px;
-  height: 250px;
-  border-radius: 20px;
-  margin-right: 12px;
-  margin-left: 13px;
-}
+.web_slider_item img,
 .graphic_slider_item img {
   height: 80%;
   width: auto;
-  margin: auto;
+  margin: 0 auto;
   padding-top: 7%;
 }
 /* Read More */
@@ -1539,10 +1528,16 @@ footer > div > img {
   .about_line01 {
     top: -10px;
   }
-  .about_wrap {
+  .about_wrap01 {
     position: absolute;
     width: 100%;
     top: 65px;
+    left: -5%;
+  }
+  .about_wrap02 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     left: -5%;
   }
   .about_left01 {
@@ -1563,7 +1558,7 @@ footer > div > img {
   }
   .about_right02 {
     width: 65%;
-    padding: 25% 0 0 0;
+    padding-bottom: 50%;
   }
   .about_right02 p {
     font-size: 16px;
@@ -1574,12 +1569,17 @@ footer > div > img {
     width: 90%;
     padding-top: 35%;
   }
-  .about_animation {
+  .about_animation01 {
     top: 10%;
     width: 95%;
   }
+  .about_animation02 {
+    top: -35%;
+    width: 85%;
+  }
   .about_img_07 {
     bottom: -40%;
+    width: 100%;
   }
   .about_btn,
   .works_btn {
@@ -1813,11 +1813,15 @@ footer > div > img {
   }
   .web_slider,
   .graphic_slider {
-    max-width: 450px;
+    max-width: 84%;
   }
   .web_slider_item,
   .graphic_slider_item {
-    max-width: 450px;
+    max-width: 84%;
+  }
+  .web_slider_item img,
+  .graphic_slider_item img {
+    padding-top: 5%;
   }
   /* スライダー */
   .web_slider_item::before,

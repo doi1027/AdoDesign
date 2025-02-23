@@ -401,7 +401,7 @@
 }
 .about_left01 p {
   line-height: 2.25;
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em; */
   text-align: start;
 }
 .about_left02 {
@@ -412,6 +412,7 @@
   font-size: 14px;
   line-height: 1.85;
   margin-bottom: 5px;
+  text-align: justify;
 }
 .dot_line {
   /* background-image: linear-gradient(to right, #705d53 2px, transparent 2px); */
@@ -435,7 +436,7 @@
   position: absolute;
   font-family: ta-oonishi, sans-serif;
   font-size: 21px;
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em; */
   top: 75px;
   left: 40%;
   z-index: 50;
@@ -557,7 +558,7 @@
 .design_right p,
 .cording_left p {
   line-height: 1.75;
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em; */
 }
 /* アバウト_スキル */
 .skill_container01 {
@@ -583,11 +584,11 @@
 }
 .design_right img {
   width: 223px;
-  padding: 70px 0 20px 56px;
+  padding: 70px 0 20px 55px;
 }
 .design_right p {
   padding-left: 56px;
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em; */
 }
 .skill_container02 {
   display: flex;
@@ -606,8 +607,7 @@
 }
 .cording_left img {
   width: 263px;
-  height: 105px;
-  padding-top: 40px;
+  padding: 70px 0 20px;
 }
 .cording_left p {
   padding-right: 28px;
@@ -618,7 +618,7 @@
 .cording_right img {
   width: 164px;
   padding-top: 50%;
-  padding-right: 54px;
+  padding-right: 80px;
 }
 .skill_item {
   font-size: 21px;
@@ -718,7 +718,7 @@
 .important_text {
   width: 90%;
   line-height: 1.75;
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em; */
   padding: 15px 0 0 30px;
 }
 .important_right01,
@@ -780,12 +780,13 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  margin: 75px auto;
+  margin: 90px auto;
 }
 .web_slider_item,
 .graphic_slider_item {
   background-color: #f3ecd8; /* 背景色指定 */
   max-width: 350px;
+  width: 100%;
   height: 250px;
   border-radius: 20px;
   margin-right: 12px;
@@ -794,10 +795,11 @@
 }
 .web_slider_item img,
 .graphic_slider_item img {
+  object-fit: contain;
   height: 80%;
   width: auto;
   margin: 0 auto;
-  padding-top: 7%;
+  padding-top: 9%;
 }
 /* Read More */
 .web_slider_item,
@@ -1084,7 +1086,7 @@
 .works_right p {
   max-width: 431px;
   font-size: 14px;
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em; */
   line-height: 1.75;
   padding: 15px 0 15px;
 }
@@ -1196,7 +1198,7 @@ form {
 }
 label {
   font-size: 14px;
-  letter-spacing: 0.1em;
+  /* letter-spacing: 0.1em; */
   margin-bottom: 10px;
   display: block;
 }
@@ -1214,7 +1216,7 @@ textarea {
   box-sizing: border-box;
   background: #fcfaf5;
   font-size: 16px;
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em; */
 }
 ::placeholder {
   font-size: 16px;
@@ -1248,7 +1250,7 @@ textarea {
 }
 .thanks02 {
   font-size: 16px;
-  letter-spacing: 0.05em;
+  /* letter-spacing: 0.05em; */
   position: absolute;
   z-index: 50;
   left: 26%;
@@ -1444,10 +1446,11 @@ footer > div > img {
   .header_box01 p,
   .header_box02 p {
     font-size: 35px;
-    letter-spacing: 0;
+    /* letter-spacing: 0; */
     padding-left: 25px;
     padding-top: 5px;
   }
+  /* ワークス */
   .list {
     display: block;
     max-width: 84%;
@@ -1517,11 +1520,11 @@ footer > div > img {
     position: relative;
   }
   .first_view02 {
-    top: 30%;
-    right: 13%;
+    top: 45%;
+    right: 15%;
   }
   .first_view03 {
-    left: -7px;
+    top: 40%;
   }
   .header_container {
     bottom: 20%;
@@ -1530,7 +1533,7 @@ footer > div > img {
     width: 100%;
     height: 28px;
     border-radius: 0 5px 5px 0;
-    margin: -45% 0 7%;
+    margin: -25% 0 5%;
   }
   .header_box02 {
     width: 110%;
@@ -1540,7 +1543,7 @@ footer > div > img {
   .header_box01 p,
   .header_box02 p {
     font-size: 20px;
-    letter-spacing: 0;
+    /* letter-spacing: 0; */
     padding-left: 25px;
     padding-top: 5px;
   }
@@ -1575,7 +1578,9 @@ footer > div > img {
     padding: 45% 0 0 0;
   }
   .about_left01 p {
+    font-size: 14px;
     padding-bottom: 65px;
+    text-align: center;
   }
   .about_left02 {
     width: 84%;
@@ -1593,7 +1598,7 @@ footer > div > img {
   .about_right02 p {
     font-size: 16px;
     top: -10px;
-    left: 15%;
+    left: 36%;
   }
   .about_img_00 {
     width: 90%;
@@ -1606,10 +1611,12 @@ footer > div > img {
   .about_animation02 {
     top: -35%;
     width: 85%;
+    z-index: -1;
   }
   .about_img_07 {
     bottom: -40%;
     width: 100%;
+    padding-right: 10%;
   }
   .about_btn,
   .works_btn {
@@ -1629,6 +1636,16 @@ footer > div > img {
     flex-direction: column;
     align-items: center;
     gap: 80px;
+  }
+  .skill_left img {
+    padding-bottom: 5%;
+  }
+  .skill_item {
+    font-size: 18px;
+  }
+  .skill_level {
+    gap: 2px;
+    font-size: 16px;
   }
   /* アバウト_スキル */
   .skill_container01,
@@ -1661,6 +1678,7 @@ footer > div > img {
     width: 315px;
     font-size: 14px;
     padding-left: 0;
+    text-align: justify;
   }
   .cording_left img {
     width: 182px;
@@ -1669,6 +1687,7 @@ footer > div > img {
     width: 315px;
     font-size: 14px;
     padding-right: 0;
+    text-align: justify;
   }
   /* インポータント */
   .important_content01,
@@ -1682,6 +1701,7 @@ footer > div > img {
   .important_text {
     width: 84%;
     font-size: 14px;
+    text-align: justify;
   }
   .important_right01,
   .important_left02 {
@@ -1705,7 +1725,7 @@ footer > div > img {
   }
   /* ワークス */
   .works_title {
-    top: 25px;
+    margin: 25px 0 0 10px;
   }
   .works_title img {
     left: 7%;
@@ -1791,8 +1811,7 @@ footer > div > img {
   }
   /* コンタクト */
   .contact_text {
-    width: 203px;
-    margin: 0 auto;
+    font-size: 14px;
   }
   /* コンタクトフォーム */
   form {
@@ -1851,7 +1870,9 @@ footer > div > img {
   }
   .web_slider_item,
   .graphic_slider_item {
-    max-width: 84%;
+    max-width: 315px;
+    width: 84%;
+    height: 215px;
   }
   .web_slider_item img,
   .graphic_slider_item img {

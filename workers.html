@@ -54,11 +54,16 @@
                     <p>・・・</p>
                 </div>
                 <div class="works_detail">
+                    <!-- モーダルウインドウ -->
                     <div class="works_left">
-                        <img src="./Works/1x/WORKERS.png" alt="">
-                        <div class="open_btn">
-                            <p>PC版</p>
-                            <!-- <img src="./SVG/mordal_before.svg" alt=""> -->
+                        <img class="pc_mockup" src="./Works/1x/LIFE STYLE FIT.png" alt="">
+                        <div class="open_btn_02">
+                            <div class="open_btn">
+                                <p class="pc_open_btn">PC版</p>
+                            </div>
+                            <div>
+                                <p class="sp_open_btn">スマホ版</p>
+                            </div>
                         </div>
                     </div>
                     <div class="modal_content">
@@ -67,7 +72,6 @@
                             <img src="./Works/1x/pc_modal_LIFE STYLE FIT.jpg" alt="PC版">
                         </div>
                     </div>
-
                     <div class="works_right">
                         <p class="dot_line">LIFE STYLE FIT</p>
 
@@ -128,8 +132,12 @@
         })
         // モーダルウインドウ
         $(function () {
-            $('.open_btn').on('click', function () {
-                $('.open_btn').toggleClass('open');
+            $('.open_btn_01').on('click', function () {
+                $('.open_btn_01').toggleClass('open');
+                $('.modal_content').fadeToggle();
+            })
+            $('.open_btn_02').on('click', function () {
+                $('.open_btn_02').toggleClass('open');
                 $('.modal_content').fadeToggle();
             })
             $('.close_btn').on('click', function () {

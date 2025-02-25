@@ -54,8 +54,9 @@
                     <p>・・・</p>
                 </div>
                 <div class="works_detail">
+                    <!-- モーダルウインドウ -->
                     <div class="works_left">
-                        <img src="./Works/1x/DESIGN CAFE.png" alt="">
+                        <img class="pc_mockup" src="./Works/1x/LIFE STYLE FIT.png" alt="">
                         <div class="open_btn_02">
                             <div class="open_btn">
                                 <p class="pc_open_btn">PC版</p>
@@ -67,11 +68,10 @@
                     </div>
                     <div class="modal_content">
                         <span class="close_btn"></span>
-                        <div class="pc_modal_img">
+                        <div class="modal_img">
                             <img src="./Works/1x/pc_modal_LIFE STYLE FIT.jpg" alt="PC版">
                         </div>
                     </div>
-
                     <div class="works_right">
                         <p class="dot_line">LIFE STYLE FIT</p>
 
@@ -136,8 +136,8 @@
                 $('.open_btn_01').toggleClass('open');
                 $('.modal_content').fadeToggle();
             })
-            $('.open_btn').on('click', function () {
-                $('.open_btn').toggleClass('open');
+            $('.open_btn_02').on('click', function () {
+                $('.open_btn_02').toggleClass('open');
                 $('.modal_content').fadeToggle();
             })
             $('.close_btn').on('click', function () {

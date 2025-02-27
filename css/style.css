@@ -990,7 +990,8 @@
   max-width: 481px;
 }
 /* モーダルウィンドウ */
-.modal_content {
+.pc_modal_content,
+.sp_modal_content {
   display: none;
   position: fixed;
   left: 0;
@@ -1343,7 +1344,6 @@ footer > div > img {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  font-size: 16px;
 }
 .pagetop {
   position: fixed;
@@ -1918,5 +1918,8 @@ footer > div > img {
     border-top: 3px solid #d4c3b0;
     border-right: 3px solid #d4c3b0;
     transform: rotate(45deg);
+  }
+  .footer_outer {
+    font-size: 14px;
   }
 }
